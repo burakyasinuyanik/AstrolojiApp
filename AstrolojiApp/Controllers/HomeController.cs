@@ -14,37 +14,37 @@ public class HomeController : Controller
     {
 
 
-        var connectionString = "Server=localhost,1441;Database=AstrologyDb;User=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=true";
-        var connection = new SqlConnection(connectionString);
+        //var connectionString = "Server=localhost,1441;Database=AstrologyDb;User=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=true";
+        //var connection = new SqlConnection(connectionString);
 
-        var queryAppSetting = "Select * from AppSetting";
-        var appSetting = (await connection.QueryAsync<AppSetting>(queryAppSetting)).First();
+        //var queryAppSetting = "Select * from AppSetting";
+        //var appSetting = (await connection.QueryAsync<AppSetting>(queryAppSetting)).First();
 
-        var queryAstrologComment = "Select * from AstrologComment";
-        var astrologComment = (await connection.QueryAsync<AstrologComment>(queryAstrologComment));
+        //var queryAstrologComment = "Select * from AstrologComment";
+        //var astrologComment = (await connection.QueryAsync<AstrologComment>(queryAstrologComment));
 
-        var queryDailyNews = "Select * from DailyNews";
-        var dailyNews = (await connection.QueryAsync<DailyNews>
-        (queryDailyNews));
+        //var queryDailyNews = "Select * from DailyNews";
+        //var dailyNews = (await connection.QueryAsync<DailyNews>
+        //(queryDailyNews));
 
-        var queryHoroscopeGroups = "Select * from HoroscopeGroups";
-        var horoscopeGroups = (await connection.QueryAsync<HoroscopeGroups>(queryHoroscopeGroups));
+        //var queryHoroscopeGroups = "Select * from HoroscopeGroups";
+        //var horoscopeGroups = (await connection.QueryAsync<HoroscopeGroups>(queryHoroscopeGroups));
 
-        var queryHoroscopes = "Select * from Horoscopes";
-        var horoscopes = (await connection.QueryAsync<Horoscopes>(queryHoroscopes));
+        //var queryHoroscopes = "Select * from Horoscopes";
+        //var horoscopes = (await connection.QueryAsync<Horoscopes>(queryHoroscopes));
 
-        var queryServices = "Select * from Services";
-        var services = (await connection.QueryAsync<Services>
-        (queryServices));
+        //var queryServices = "Select * from Services";
+        //var services = (await connection.QueryAsync<Services>
+        //(queryServices));
 
         HomePageModel model = new(){
 
-            AppSetting = appSetting,
-            AstrologComments=astrologComment,
-            DailyNews= dailyNews,
-            HoroscopeGroups = horoscopeGroups,
-            Horoscopes = horoscopes,
-            Services = services,
+            //AppSetting = appSetting,
+            //AstrologComments=astrologComment,
+            //DailyNews= dailyNews,
+            //HoroscopeGroups = horoscopeGroups,
+            //Horoscopes = horoscopes,
+            //Services = services,
         };
             
 
