@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Dashboard - NiceAdmin Bootstrap Template</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    @await Html.PartialAsync("_StylePartical")
+
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    @await Html.PartialAsync("_HeaderPartical")
+
+    <!-- ======= Sidebar ======= -->
+    @await Html.PartialAsync("_SideBarPartical")
+
+
+    <main id="main" class="main">
+        @RenderBody()
+        <!-- Start Page Title -->
+        @await Html.PartialAsync("_PageTitlePartical")
+        <!-- End Page Title -->
+
+        <section class="section dashboard">
+            <div class="row">
+
+                <!-- Left side columns -->
+                @await Html.PartialAsync("_MainLeftClumPartical")
+                <!-- End Left side columns -->
+
+                <!-- Right side columns -->
+                @await Html.PartialAsync("_MainRightClumPartical")
+                <!-- End Right side columns -->
+
+            </div>
+        </section>
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    @await Html.PartialAsync("_FooterPartical")
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    @await Html.PartialAsync("_ScriptPartical")
+
+</body>
+
+</html>
