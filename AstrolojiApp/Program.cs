@@ -1,7 +1,11 @@
+using AstrolojiApp.Areas.Admin.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped(typeof(IRepository<>),typeof(DapperRepository<>));
+
 
 var app = builder.Build();
 

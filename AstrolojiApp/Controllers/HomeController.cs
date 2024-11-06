@@ -4,51 +4,35 @@ using AstrolojiApp.Models;
 using System.Data.SqlClient;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Dapper;
+using AstrolojiApp.Areas.Admin.Data;
 
 namespace AstrolojiApp.Controllers;
 
 public class HomeController : Controller
 {
 
+    private readonly IRepository<AppSetting> _appsetting;
+    private readonly IRepository<AstrologComment> _astrologComment;
+
+
+
+    public HomeController(IRepository<AppSetting> appsetting, IRepository<AstrologComment> astrologComment)
+    {
+        _appsetting = appsetting;
+        _astrologComment = astrologComment;
+    }
+
     public async  Task<IActionResult> Index()
     {
+          var applist= await _appsetting.GetAllAsync();
+          var comment= await _astrologComment.GetAllAsync();
+        HomePageModel homePageModel = new HomePageModel();
 
-
-        //var connectionString = "Server=localhost,1441;Database=AstrologyDb;User=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=true";
-        //var connection = new SqlConnection(connectionString);
-
-        //var queryAppSetting = "Select * from AppSetting";
-        //var appSetting = (await connection.QueryAsync<AppSetting>(queryAppSetting)).First();
-
-        //var queryAstrologComment = "Select * from AstrologComment";
-        //var astrologComment = (await connection.QueryAsync<AstrologComment>(queryAstrologComment));
-
-        //var queryDailyNews = "Select * from DailyNews";
-        //var dailyNews = (await connection.QueryAsync<DailyNews>
-        //(queryDailyNews));
-
-        //var queryHoroscopeGroups = "Select * from HoroscopeGroups";
-        //var horoscopeGroups = (await connection.QueryAsync<HoroscopeGroups>(queryHoroscopeGroups));
-
-        //var queryHoroscopes = "Select * from Horoscopes";
-        //var horoscopes = (await connection.QueryAsync<Horoscopes>(queryHoroscopes));
-
-        //var queryServices = "Select * from Services";
-        //var services = (await connection.QueryAsync<Services>
-        //(queryServices));
-
-        HomePageModel model = new(){
-
-            //AppSetting = appSetting,
-            //AstrologComments=astrologComment,
-            //DailyNews= dailyNews,
-            //HoroscopeGroups = horoscopeGroups,
-            //Horoscopes = horoscopes,
-            //Services = services,
-        };
+        homePageModel.AppSetting=applist.First();
+        homePageModel.AstrologComments=comment;
             
 
-        return View(model);
+        return View(homePageModel);
     }
 
 

@@ -2,7 +2,7 @@ using System;
 
 namespace AstrolojiApp.Models;
 
-public class DailyNews
+public class DailyNew
 {
     public int Id { get; set; }
     public string? Title { get; set; }

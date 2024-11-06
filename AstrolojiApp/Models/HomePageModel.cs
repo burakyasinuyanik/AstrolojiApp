@@ -6,8 +6,8 @@ public class HomePageModel
 {
     public AppSetting? AppSetting { get; set; }
     public IEnumerable<AstrologComment>? AstrologComments { get; set; }
-    public IEnumerable<DailyNews>? DailyNews { get; set; }
-    public IEnumerable<HoroscopeGroups>? HoroscopeGroups { get; set; }
-    public IEnumerable<Horoscopes>? Horoscopes { get; set; }
-    public IEnumerable<Services>? Services { get; set; }
+    public IEnumerable<DailyNew>? DailyNews { get; set; }
+    public IEnumerable<HoroscopeGroup>? HoroscopeGroups { get; set; }
+    public IEnumerable<Horoscope>? Horoscopes { get; set; }
+    public IEnumerable<Service>? Services { get; set; }
 }
