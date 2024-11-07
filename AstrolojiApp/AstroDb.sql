@@ -26,8 +26,8 @@ VALUES(
     'Koç, Boğa, İkizler, Yengeç, Aslan, Başak, Terazi, Akrep, Yay, Oğlak, Kova, Balık',
     '0212 000 0000',
     'gokyuzunebakiyoruz@org.com'
-)
-
+);
+GO
 
 CREATE TABLE AstrologComment (
     Id INT PRIMARY KEY identity,
@@ -115,9 +115,8 @@ CREATE TABLE Services (
     Name VARCHAR(255) not NULL,
     Title NVARCHAR(100) not NULL
 );
-
+GO
 INSERT INTO Services ( Name, Title)
-
 VALUES 
     ('AstroMap Workshop'),
     ('Reiki Workshop'),
