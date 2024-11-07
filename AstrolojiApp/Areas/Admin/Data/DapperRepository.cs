@@ -13,11 +13,11 @@ public class DapperRepository<T> : IRepository<T> where T : class
         {
 
         //Bağlantıyı hazırlıyoruz
-        _connectionString = "Server=localhost,1441;Database=PortfolioDb;User=sa;Password=YourStrong@Passw0rd,;TrustServerCertificate=true";
+      //  _connectionString = "Server=localhost,1441;Database=PortfolioDb;User=sa;Password=YourStrong@Passw0rd,;TrustServerCertificate=true";
       //  var connection = new SqlConnection(connectionString);
 
 
-      //  _connectionString = "Server=.\\SQLEXPRESS; Database=AstrologyDb; Integrated Security=True;TrustServerCertificate=True";
+        _connectionString = "Server=.\\SQLEXPRESS; Database=AstrologyDb; Integrated Security=True;TrustServerCertificate=True";
             
             
              _tableName=typeof(T).Name;
@@ -43,5 +43,25 @@ public class DapperRepository<T> : IRepository<T> where T : class
             var query=$"Select * from {_tableName}";
             return await connection.QueryAsync<T>(query);
         }
+    }
+
+    public Task<T?> GetAsync(int id)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Task<int> AddAsync(T entity)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Task<int> UpdateAsync(T entity)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Task<int> DeleteAsync(int id)
+    {
+        throw new NotImplementedException();
     }
 }

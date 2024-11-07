@@ -26,6 +26,7 @@ public class HomeController : Controller
     {
           var applist= await _appsetting.GetAllAsync();
           var comment= await _astrologComment.GetAllAsync();
+        var astrogetbyOne = await _astrologComment.GetById(5);
         HomePageModel homePageModel = new HomePageModel();
 
         homePageModel.AppSetting=applist.First();

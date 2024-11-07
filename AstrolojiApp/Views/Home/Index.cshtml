@@ -1,4 +1,8 @@
-﻿@model HomePageModel
+﻿@* @model HomePageModel
+
+@{
+    Layout = "";
+}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -433,7 +437,11 @@
                 </p>
                 <div class="profile mt-auto">
                   <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                  <h3>@Model.AstrologComment.Name</h3>
+                                    @foreach(var item in Model.AstrologComments)
+                                    {
+                                        <h3>@item.Name</h3>
+                                    }
+                                   
                   <h4>Store Owner</h4>
                 </div>
               </div>
@@ -1049,4 +1057,4 @@
 
 </body>
 
-</html>
+</html> *@
