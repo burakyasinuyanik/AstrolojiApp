@@ -3,3 +3,14 @@
     ViewData["Title"] = "Index";
 }
 <h1>Astrology Comment</h1>
+
+@foreach (var astrgcmmt in Model)
+{
+    <div class="card">
+        <img src="@astrgcmmt.Image" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">@astrgcmmt.Name</h5>
+            <p class="card-text">@astrgcmmt.Text</p>
+        </div>
+    </div>
+}
