@@ -3,3 +3,25 @@
     ViewData["Title"] = "Index";
 }
 <h1>Horoscope</h1>
+
+<div class="d-flex justify-content-center">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Horoscope</th>
+                <th scope="col">Range Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var horoscope in Model)
+            {
+                <tr>
+                    <th scope="row">@horoscope.Id</th>
+                    <td>@horoscope.Name</td>
+                    <td>@horoscope.DateRange</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
