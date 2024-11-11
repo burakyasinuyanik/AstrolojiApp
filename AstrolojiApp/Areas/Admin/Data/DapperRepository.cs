@@ -13,13 +13,13 @@ public class DapperRepository<T> : IRepository<T> where T : class
     {
 
         //Bağlantıyı hazırlıyoruz
-       // _connectionString = "Server=localhost,1441;Database=AstrologyDb;User=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=true";
+        _connectionString = "Server=localhost,1441;Database=AstrologyDb;User=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=true";
 
         //    var connection = new SqlConnection(connectionString);
 
 
 
-       _connectionString = "Server=.\\SQLEXPRESS; Database=AstrologyDb; Integrated Security=True;TrustServerCertificate=True";
+   //    _connectionString = "Server=.\\SQLEXPRESS; Database=AstrologyDb; Integrated Security=True;TrustServerCertificate=True";
 
 
 
