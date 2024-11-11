@@ -27,6 +27,8 @@ namespace AstrolojiApp.Areas.Admin.Controllers
 
             var astrologComments= await _astrologComment.GetAllAsync();
 
+            var oneAstrologComments = await _astrologComment.GetAsync(1);
+
             return View(astrologComments);
         }
 

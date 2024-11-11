@@ -53,23 +53,39 @@ public class DapperRepository<T> : IRepository<T> where T : class
         }
     }
 
-    public Task<T?> GetAsync(int id)
+    public async Task<T?> GetAsync(int id)
     {
-        throw new NotImplementedException();
+        using (var connection = CreateConnection())
+        {
+            var query = $"Select * from {_tableName} where Id={id}";
+            return await connection.QuerySingleOrDefaultAsync<T>(query);
+        }
     }
 
     public Task<int> AddAsync(T entity)
     {
-        throw new NotImplementedException();
+        using (var connection = CreateConnection())
+        {
+            var query = $"Select * from {_tableName}";
+            return null;
+        }
     }
 
     public Task<int> UpdateAsync(T entity)
     {
-        throw new NotImplementedException();
+        using (var connection = CreateConnection())
+        {
+            var query = $"Select * from {_tableName}";
+            return null;
+        }
     }
 
     public Task<int> DeleteAsync(int id)
     {
-        throw new NotImplementedException();
+        using (var connection = CreateConnection())
+        {
+            var query = $"Select * from {_tableName}";
+            return null;
+        }
     }
 }

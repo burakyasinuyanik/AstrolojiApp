@@ -9,6 +9,7 @@ public interface IRepository<T> where T: class
     Task<int> AddAsync(T entity);//yeni kayýt
     Task<int> UpdateAsync(T entity);//güncelleme
     Task<int> DeleteAsync(int id);//id id'li kaydý sil
+  
 
 
 }

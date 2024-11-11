@@ -38,6 +38,8 @@ public class HomeController : Controller
           var horoscopeGroups=await _horoscopeGroup.GetAllAsync();
           var services = await _service.GetAllAsync();
 
+       
+              
         HomePageModel homePageModel = new HomePageModel();
 
         homePageModel.AppSetting=applist.First();
