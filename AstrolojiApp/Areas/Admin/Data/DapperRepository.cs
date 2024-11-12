@@ -13,13 +13,13 @@ public class DapperRepository<T> : IRepository<T> where T : class
     {
 
         //Bağlantıyı hazırlıyoruz
-       // _connectionString = "Server=localhost,1441;Database=AstrologyDb;User=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=true";
+        _connectionString = "Server=localhost,1441;Database=AstrologyDb;User=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=true";
 
         //    var connection = new SqlConnection(connectionString);
 
 
 
-       _connectionString = "Server=.\\SQLEXPRESS; Database=AstrologyDb; Integrated Security=True;TrustServerCertificate=True";
+        //    _connectionString = "Server=.\\SQLEXPRESS; Database=AstrologyDb; Integrated Security=True;TrustServerCertificate=True";
 
 
 
@@ -57,35 +57,61 @@ public class DapperRepository<T> : IRepository<T> where T : class
     {
         using (var connection = CreateConnection())
         {
-            var query = $"Select * from {_tableName} where Id={id}";
-            return await connection.QuerySingleOrDefaultAsync<T>(query);
+            var query = $"SELECT * FROM {_tableName} WHERE Id = @Id";
+            return await connection.QuerySingleOrDefaultAsync<T>(query, new { Id = id });
         }
     }
 
-    public Task<int> AddAsync(T entity)
+
+    public async Task<int> AddAsync(T entity)
     {
         using (var connection = CreateConnection())
         {
-            var query = $"Select * from {_tableName}";
-            return null;
+            var query = $"INSERT INTO {_tableName} ({string.Join(",", GetColumns())}) " +
+                        $"VALUES ({string.Join(",", GetParameters())});";
+            return await connection.ExecuteAsync(query, entity);
         }
     }
 
-    public Task<int> UpdateAsync(T entity)
+    private IEnumerable<string> GetColumns()
+    {
+
+        var properties = typeof(T).GetProperties();
+        return properties.Select(p => p.Name);
+    }
+
+    private IEnumerable<string> GetParameters()
+    {
+
+        var properties = typeof(T).GetProperties();
+        return properties.Select(p => "@" + p.Name);
+    }
+
+
+    public async Task<int> UpdateAsync(T entity)
     {
         using (var connection = CreateConnection())
         {
-            var query = $"Select * from {_tableName}";
-            return null;
+            var query = $"UPDATE {_tableName} SET {string.Join(",", GetUpdateSet())} WHERE Id = @Id";
+            return await connection.ExecuteAsync(query, entity);
         }
     }
 
-    public Task<int> DeleteAsync(int id)
+    private IEnumerable<string> GetUpdateSet()
+    {
+        var properties = typeof(T).GetProperties();
+        return properties.Where(p => p.Name != "Id")
+                         .Select(p => $"{p.Name} = @{p.Name}");
+    }
+
+
+    public async Task<int> DeleteAsync(int id)
     {
         using (var connection = CreateConnection())
         {
-            var query = $"Select * from {_tableName}";
-            return null;
+            var query = $"DELETE FROM {_tableName} WHERE Id = @Id";
+            return await connection.ExecuteAsync(query, new { Id = id });
         }
     }
+
 }
