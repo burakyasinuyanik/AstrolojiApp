@@ -129,6 +129,7 @@ CREATE TABLE Services
     Id INT PRIMARY KEY identity,
     Name VARCHAR(255) not NULL,
     Title NVARCHAR(2000) not NULL
+    
 );
 GO
 INSERT INTO Services
@@ -140,4 +141,41 @@ VALUES
     ('Evren Workshop', 'Evren Workshop, kişisel yaşam alanlarınıza enerjiyi nasıl yönlendirebileceğinizi ve mekanlarınızda dengeyi nasıl sağlayacağınızı öğretir. Feng Shui tekniklerini kullanarak, evinizde huzur ve olumlu enerji akışını sağlamak mümkün.')
 
 go
+
+CREATE TABLE SocialMedia
+(
+    Id int PRIMARY KEY IDENTITY,
+    Name NVARCHAR(400) NOT null,
+    Url NVARCHAR(1000) NOT null,
+    Icon NVARCHAR(1000) NOT null
+);
+GO
+
+INSERT INTO SocialMedia
+    (Name,Url,Icon)
+
+VALUES
+    ('Facebook', 'https://www.facebook.com', '<i class="bi bi-facebook"></i>'),
+    ('Twitter', 'https://www.twitter.com', '<i class="bi bi-twitter-x"></i>'),
+    ('Instagram', 'https://www.instagram.com', '<i class="bi bi-instagram"></i>'),
+    ('TikTok', 'https://www.tiktok.com', '<i class="bi bi-tiktok"></i>')
+    GO
+
+CREATE TABLE Contact
+(
+    Id int PRIMARY KEY IDENTITY,
+    Address NVARCHAR(400) NOT null,
+    PhoneNumber NVARCHAR(1000) NOT null,
+    Icon NVARCHAR(1000) NOT null,
+    Map NVARCHAR(1000) NOT null
+)
+GO
+
+INSERT INTO Contact
+    (Address,PhoneNumber,Icon,Map)
+
+VALUES
+    ('Kadıköy', '02120003131', '<i class="bi bi-geo-alt-fill"></i>', '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.717235259264!2d29.0368903!3d40.9876722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab870784d1389%3A0x2bf4921764859e70!2zw5xsa2VyIEZlbmVyYmFow6dlIMWew7xrcsO8IFNhcmFjb8SfbHUgU3RhZHl1bXU!5e0!3m2!1str!2str!4v1731415851676!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>')
+    GO
+
 

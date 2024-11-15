@@ -17,9 +17,12 @@ public class HomeController : Controller
     private readonly IRepository<Horoscope> _horoscope;
     private readonly IRepository<HoroscopeGroup> _horoscopeGroup;
     private readonly IRepository<Service> _service;
+    private readonly IRepository<SocialMedia> _socialMedia;
+    private readonly IRepository<Contact> _contact;
 
 
-    public HomeController(IRepository<AppSetting> appsetting, IRepository<AstrologComment> astrologComment, IRepository<DailyNew> dailyNew, IRepository<Horoscope> horoscope, IRepository<HoroscopeGroup> horoscopeGroup, IRepository<Service> service)
+
+    public HomeController(IRepository<AppSetting> appsetting, IRepository<AstrologComment> astrologComment, IRepository<DailyNew> dailyNew, IRepository<Horoscope> horoscope, IRepository<HoroscopeGroup> horoscopeGroup, IRepository<Service> service, IRepository<SocialMedia> socialMedia, IRepository<Contact> contact)
     {
         _appsetting = appsetting;
         _astrologComment = astrologComment;
@@ -27,6 +30,8 @@ public class HomeController : Controller
         _horoscope = horoscope;
         _horoscopeGroup = horoscopeGroup;
         _service = service;
+        _socialMedia= socialMedia;
+        _contact = contact;
     }
 
     public async  Task<IActionResult> Index()
@@ -37,7 +42,8 @@ public class HomeController : Controller
           var horoscopes = await _horoscope.GetAllAsync();
           var horoscopeGroups=await _horoscopeGroup.GetAllAsync();
           var services = await _service.GetAllAsync();
-
+          var socialMedia = await _socialMedia.GetAllAsync();
+          var contact = await _contact.GetAllAsync();
        
               
         HomePageModel homePageModel = new HomePageModel();
@@ -48,6 +54,8 @@ public class HomeController : Controller
         homePageModel.Horoscopes=horoscopes;
         homePageModel.Services=services;
         homePageModel.HoroscopeGroups=horoscopeGroups;
+        homePageModel.SocialMedia = socialMedia;
+        homePageModel.Contact= contact;
 
         return View(homePageModel);
     }

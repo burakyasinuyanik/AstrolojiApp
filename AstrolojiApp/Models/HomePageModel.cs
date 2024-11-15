@@ -10,4 +10,7 @@ public class HomePageModel
     public IEnumerable<HoroscopeGroup>? HoroscopeGroups { get; set; }
     public IEnumerable<Horoscope>? Horoscopes { get; set; }
     public IEnumerable<Service>? Services { get; set; }
+    public IEnumerable<SocialMedia>? SocialMedia { get; set; }
+    public IEnumerable<Contact>? Contact { get; set; }
+
 }
