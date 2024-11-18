@@ -10,29 +10,22 @@
 
         <div class="row g-5">
 
-
-
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                <div class="service-item item-cyan position-relative">
-                    <i class="bi bi-activity icon"></i>
-                    <div>
-                        <h3>Nesciunt Mete</h3>
-                        <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure
-                            perferendis tempore et consequatur.</p>
-                        <a href="service-details.html" class="read-more stretched-link">Ayrıntılı bilgi <i
-                                class="bi bi-arrow-right"></i></a>
+            @foreach (var service in Model.Service)
+            {
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-item item-cyan position-relative">
+                        <i class="bi bi-activity icon"></i>
+                        <div>
+                            <h3>@service.Name</h3>
+                            <p>@service.Title</p>
+                            <a href="service-details.html" class="read-more stretched-link">Ayrıntılı bilgi <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
                     </div>
                 </div>
-            </div><!-- End Service Item -->
 
-
-
-
-
-
-
-
-
+                <!-- End Service Item -->
+            }
 
         </div>
 
