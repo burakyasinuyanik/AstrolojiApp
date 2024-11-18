@@ -1,17 +1,17 @@
-// using System;
+//using System;
 
-// namespace AstrolojiApp;
+//namespace AstrolojiApp;
 
-// public class Sql
-// {
+//public class Sql
+//{
 
-//     CREATE DATABASE AstrologyDb
+//    CREATE DATABASE AstrologyDb
 
-//     use AstrologyDb
+//    use AstrologyDb
 
-//     CREATE TABLE AppSetting(
-//         Id INT PRIMARY KEY identity,
-//         WorkingHours VARCHAR(255) NULL,
+//    CREATE TABLE AppSetting(
+//        Id INT PRIMARY KEY identity,
+//        WorkingHours VARCHAR(255) NULL,
 //     BrandName VARCHAR(255) NULL,
 //     ImageUrl VARCHAR(255) NULL,
 //     Title VARCHAR(255) NULL,
@@ -52,34 +52,34 @@
 //     'https://example.com/images/johndoe.jpg'
 // );
 
-//     go
+//    go
 
-//     CREATE TABLE DailyNews(
-//         Id INT PRIMARY KEY identity,
-//         Title VARCHAR(255) NULL,
+//    CREATE TABLE DailyNews(
+//        Id INT PRIMARY KEY identity,
+//        Title VARCHAR(255) NULL,
 //     Text NVARCHAR(200) NOT NULL
 // );
 
-//     go
+//    go
 
-//     INSERT INTO DailyNews(Title, Text)
+//    INSERT INTO DailyNews(Title, Text)
 // VALUES(
-   
+
 //     'Daily Horoscope for Today',
 //     'Today’s horoscope brings positive energy and optimism. Great opportunities ahead!'
 // );
-//     go
+//    go
 
-//     CREATE TABLE HoroscopeGroups(
-//         Id INT PRIMARY KEY identity,
-//         Name VARCHAR(255) NULL,
+//    CREATE TABLE HoroscopeGroups(
+//        Id INT PRIMARY KEY identity,
+//        Name VARCHAR(255) NULL,
 //     Image VARCHAR(255) NULL,
 //     HoroscopeNames NVARCHAR( 200) not NULL
 // );
 
-//     go
+//    go
 
-//     INSERT INTO HoroscopeGroups(Name, Image, HoroscopeNames)
+//    INSERT INTO HoroscopeGroups(Name, Image, HoroscopeNames)
 
 // VALUES
 //     ('Ateş Grubu',  'http://localhost:5100/Ui/assets/img/atesGrubu.jpg', 'Koç,Aslan,Yay'),
@@ -122,7 +122,7 @@
 //     Title NVARCHAR(100) not NULL
 // );
 
-//     INSERT INTO Services(Name, Title)
+//    INSERT INTO Services(Name, Title)
 
 // VALUES
 //     ('AstroMap Workshop'),
@@ -133,4 +133,4 @@
 // go
 
 
-// }
+//}
