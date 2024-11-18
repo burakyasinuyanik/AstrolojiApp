@@ -6,12 +6,16 @@
 
 @foreach (var daily in Model)
 {
-    <div class="card">
+    <div class="card mb-3">
         <div class="card-body">
             <h5 class="card-title">@daily.Title</h5>
             <p>
                 @daily.Text
             </p>
+            <div class="d-flex justify-content-between mt-3">
+                <a href="/Edit/@daily.Id" class="btn btn-primary btn-sm">Düzenle</a>
+                <a href="/Delete/@daily.Id" class="btn btn-danger btn-sm">Sil</a>
+            </div>
         </div>
     </div>
 }
