@@ -4,13 +4,21 @@
 }
 <h1>Astrology Comment</h1>
 
-@foreach (var astrgcmmt in Model)
-{
-    <div class="card">
-        <img src="@astrgcmmt.Image" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">@astrgcmmt.Name</h5>
-            <p class="card-text">@astrgcmmt.Text</p>
+<div class="row row-cols-1 row-cols-md-2 g-4">
+    @foreach (var astrgcmmt in Model)
+    {
+        <div class="col">
+            <div class="card h-100">
+                <img src="@astrgcmmt.Image" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">@astrgcmmt.Name</h5>
+                    <p class="card-text">@astrgcmmt.Text</p>
+                    <div class="d-flex justify-content-between mt-3">
+                        <a href="/Edit/@astrgcmmt.Id" class="btn btn-primary">Düzenle</a>
+                        <a href="/Delete/@astrgcmmt.Id" class="btn btn-danger">Sil</a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-}
+    }
+</div>
