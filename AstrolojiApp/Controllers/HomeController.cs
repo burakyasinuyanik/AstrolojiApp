@@ -36,7 +36,11 @@ public class HomeController : Controller
 
     public async  Task<IActionResult> Index()
     {
-          var applist= await _appsetting.GetAllAsync();
+       
+
+       
+
+        var applist = await _appsetting.GetAllAsync();
           var comments= await _astrologComment.GetAllAsync();
           var dailyNews = await _dailyNew.GetAllAsync();
           var horoscopes = await _horoscope.GetAllAsync();

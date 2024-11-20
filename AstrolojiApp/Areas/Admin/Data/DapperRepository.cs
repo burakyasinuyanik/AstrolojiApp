@@ -65,29 +65,74 @@ public class DapperRepository<T> : IRepository<T> where T : class
         }
     }
 
-    public Task<int> AddAsync(T entity)
+    public async Task<int> AddAsync(T entity)
     {
         using (var connection = CreateConnection())
         {
-            var query = $"Select * from {_tableName}";
-            return null;
+            var query =GetAddQuery(entity);
+            var result = await connection.ExecuteAsync(query, entity);
+            return result;
+        }
+    }
+    //insert into student(name, clasNumber...) Values(Name=@Name, classNumber=@ClassNumber)
+    private string GetAddQuery(T entity)
+    {
+        var properties = typeof(T).GetProperties();
+        var columnNames = new List<string>();
+
+        foreach (var property in properties)
+        {
+            if (property.Name == "Id")
+                continue;
+            columnNames.Add(property.Name);
+        }
+
+        var column = String.Join(", ", columnNames);
+        var values = String.Join(", @", columnNames);
+        var query = $"insert into {_tableName} ({column}) values (@{values})";    
+        return query;
+    }
+
+    //update student (name, clasNumber...) set (Name=@Name, classNumber=@ClassNumber)  where Id=id
+    public async Task<int> UpdateAsync(T entity)
+    {
+        using (var connection = CreateConnection())
+        {
+            var query = GetUpdateQuery(entity);
+            var result = await connection.ExecuteAsync(query,entity);
+            return result;
         }
     }
 
-    public Task<int> UpdateAsync(T entity)
+    private string GetUpdateQuery(T entity)
     {
-        using (var connection = CreateConnection())
+        var properties = typeof(T).GetProperties();
+        var columnNames = new List<string>();
+        int? entityId = null;
+        foreach (var property in properties)
         {
-            var query = $"Select * from {_tableName}";
-            return null;
+            if (property.Name == "Id")
+            {
+                entityId = property.GetValue(entity).GetHashCode();
+                continue;
+
+            }
+
+            columnNames.Add($"{property.Name}=@{property.Name}");
         }
+
+        var values = String.Join(", ", columnNames);
+        var query = $"update {_tableName} set {values} where Id=@Id";
+
+        return query;
     }
 
     public Task<int> DeleteAsync(int id)
     {
         using (var connection = CreateConnection())
         {
-            var query = $"Select * from {_tableName}";
+            var query = $"delete {_tableName} where={id}";
+            var result = connection.ExecuteAsync(query, new { Id = id });
             return null;
         }
     }
