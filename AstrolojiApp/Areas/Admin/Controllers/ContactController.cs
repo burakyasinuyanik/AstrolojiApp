@@ -1,26 +1,26 @@
 using AstrolojiApp.Areas.Admin.Data;
 using AstrolojiApp.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.Data.SqlClient;
+using Dapper;
 
 namespace AstrolojiApp.Areas.Admin.Controllers
 {
     [Area("Admin")]
     public class ContactController : Controller
     {
-        private readonly IRepository<AppSetting> _appsetting;
+        private readonly IRepository<Contact> _contact;
 
-        public ContactController(IRepository<AppSetting> appsetting)
+        public ContactController(IRepository<Contact> contact)
         {
-            _appsetting = appsetting;
+            _contact = contact;
         }
 
         // GET: ContactController
         public async Task<ActionResult> Index()
         {
-            var entity = await _appsetting.GetAsync(1);
-            entity.BrandName = "Bir Baþka Dapper";
-            var result = await _appsetting.UpdateAsync(entity);
-            return View();
+            var contact = await _contact.GetAllAsync();
+            return View(contact);
         }
 
     }
