@@ -28,6 +28,45 @@ namespace AstrolojiApp.Areas.Admin.Controllers
             
             return View(services);
         }
+        [HttpGet]
+        public async Task<IActionResult> Update(int id)
+        {
+            var service = await _services.GetAsync(id);
+
+            return View(service);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Update(Service entity)
+        {
+            var service = await _services.UpdateAsync(entity);
+
+            return RedirectToAction("Index","Services");
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Add()
+        {
+            
+
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Add(Service entity)
+        {
+            var service = await _services.AddAsync(entity);
+
+            return RedirectToAction("Index", "Services");
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Delete(int id)
+        {
+          var result=  await _services.DeleteAsync(id);
+
+            return RedirectToAction("Index", "Services");
+        }
 
     }
 }

@@ -14,7 +14,7 @@ public class DapperRepository<T> : IRepository<T> where T : class
 
         //Bağlantıyı hazırlıyoruz
 
-       _connectionString = "Server=localhost,1441;Database=AstrologyDb;User=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=true";
+       //_connectionString = "Server=localhost,1441;Database=AstrologyDb;User=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=true";
 
 
         //    var connection = new SqlConnection(connectionString);
@@ -22,7 +22,7 @@ public class DapperRepository<T> : IRepository<T> where T : class
 
 
 
-    //    _connectionString = "Server=.\\SQLEXPRESS; Database=AstrologyDb; Integrated Security=True;TrustServerCertificate=True";
+      _connectionString = "Server=.\\SQLEXPRESS; Database=AstrologyDb; Integrated Security=True;TrustServerCertificate=True";
 
 
 
@@ -129,13 +129,13 @@ public class DapperRepository<T> : IRepository<T> where T : class
         return query;
     }
 
-    public Task<int> DeleteAsync(int id)
+    public async Task<int> DeleteAsync(int id)
     {
         using (var connection = CreateConnection())
         {
-            var query = $"delete {_tableName} where={id}";
-            var result = connection.ExecuteAsync(query, new { Id = id });
-            return null;
+            var query = $"delete {_tableName} where Id={id}";
+            var result = await connection.ExecuteAsync(query, new { Id = id });
+            return result;
         }
     }
 }
