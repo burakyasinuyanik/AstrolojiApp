@@ -142,7 +142,7 @@ VALUES
 
 go
 
-CREATE TABLE SocialMedia
+CREATE TABLE SocialMedias
 (
     Id int PRIMARY KEY IDENTITY,
     Name NVARCHAR(400) NOT null,
@@ -151,7 +151,7 @@ CREATE TABLE SocialMedia
 );
 GO
 
-INSERT INTO SocialMedia
+INSERT INTO SocialMedias
     (Name,Url,Icon)
 
 VALUES
@@ -161,7 +161,7 @@ VALUES
     ('TikTok', 'https://www.tiktok.com', '<i class="bi bi-tiktok"></i>')
     GO
 
-CREATE TABLE Contact
+CREATE TABLE Contacts
 (
     Id int PRIMARY KEY IDENTITY,
     Address NVARCHAR(400) NOT null,
@@ -171,7 +171,7 @@ CREATE TABLE Contact
 )
 GO
 
-INSERT INTO Contact
+INSERT INTO Contacts
     (Address,PhoneNumber,Icon,Map)
 
 VALUES

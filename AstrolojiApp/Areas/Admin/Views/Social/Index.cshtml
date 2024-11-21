@@ -1,9 +1,117 @@
+@model IEnumerable<SocialMedia>
 @{
     ViewData["Title"] = "Index";
 }
 
 <h1>Social Sayfası</h1>
-<div class="card">
+
+
+<div class="d-flex justify-content-center">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                
+                <th scope="col">Social Name</th>
+                <th scope="col">Social Url</th>
+                <th scope="col">Social Icon</th>
+                <th scope="col" >Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var social in Model)
+            {
+                <tr>
+                    <th scope="row">@social.Name</th>
+                    <td>@social.Url</td>
+                    <td>@social.Icon</td>
+                    
+                    <td>
+                        <a href="/Edit" class="btn btn-primary btn-sm">Düzenle</a>
+                        <a href="/Delete" class="btn btn-danger btn-sm">Sil</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@* <div class="card">
     <div class="card-body">
         <h5 class="card-title">Social Form</h5>
 
@@ -40,4 +148,4 @@
             </div>
         </form>
     </div>
-</div>
+</div> *@
