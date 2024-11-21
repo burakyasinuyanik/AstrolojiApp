@@ -10,34 +10,24 @@
 
     <div class="row gy-5">
 
-      <div class="content col-xl-5 d-flex flex-column" data-aos="fade-up" data-aos-delay="100">
-        @* <h3>Voluptatem dignissimos provident quasi</h3>
-        <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-        dolore magna aliqua. Duis aute irure dolor in reprehenderit
-        </p> *@
-        <h3 style="display: flex; text-align: center; justify-content: center; justify-items: center;">Burcunuz hangi grupta?</h3>
-      </div>
-      
-      
-      <div class="col-xl-7" data-aos="fade-up" data-aos-delay="200">
-        <div class="row gy-4">
+     
 
+      <div style="width: 100%; height: 100%;" class="col-xl-7" data-aos="fade-up" data-aos-delay="200">
+        <h3 style="display: flex; text-align: center; justify-content: center; justify-items: center;">Burcunuz hangi
+          grupta?</h3>
+        <div style="width: 100%; height: 100%;" class="row gy-4">
 
-
-         @foreach (var item in Model.HoroscopeGroups)
+          @foreach (var item in Model.HoroscopeGroups)
           {
-
             <div class="col-md-6 icon-box position-relative">
-              <img src="@item.Image" alt="">
+              <div class="image-container">
+                <img src="@item.Image" alt="@item.Name" class="img-fluid horoscope-img">
+              </div>
+            
               <h4><a href="" class="stretched-link">@item.Name</a></h4>
-
               <p>@item.HoroscopeNames</p>
             </div>
-
-            <!-- Icon-Box -->
-          } 
-
+          }
 
         </div>
       </div>
@@ -47,3 +37,16 @@
   </div>
 
 </section>
+
+<style>
+  .horoscope-img {
+    width: 100%;
+    /* Div'in genişliğine göre ayarlanır */
+    height: auto;
+    /* Oranları koruyarak boyutlandırma */
+    object-fit: cover;
+    /* Taşma durumunda görüntüyü kırpma */
+    max-height: 200px;
+    /* Maksimum yükseklik (isteğe bağlı) */
+  }
+</style>

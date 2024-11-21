@@ -21,7 +21,9 @@ public class DapperRepository<T> : IRepository<T> where T : class
 
 
 
+
     //    _connectionString = "Server=.\\SQLEXPRESS; Database=AstrologyDb; Integrated Security=True;TrustServerCertificate=True";
+
 
 
 
