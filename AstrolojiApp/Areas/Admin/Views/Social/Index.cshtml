@@ -5,7 +5,7 @@
 
 <h1>Social Sayfası</h1>
 
-
+<a href="/Admin/Social/Add"> yeni ekle</a>
 <div class="d-flex justify-content-center">
     <table class="table table-bordered">
         <thead>
@@ -26,8 +26,9 @@
                     <td>@social.Icon</td>
                     
                     <td>
-                        <a href="/Edit" class="btn btn-primary btn-sm">Düzenle</a>
-                        <a href="/Delete" class="btn btn-danger btn-sm">Sil</a>
+                        <a asp-action="Update" asp-route-id="@social.Id" class="btn btn-primary btn-sm">Düzenle</a>
+
+                        <a asp-action="Delete" asp-route-id="@social.Id" class="btn btn-danger btn-sm">Sil</a>
                     </td>
                 </tr>
             }

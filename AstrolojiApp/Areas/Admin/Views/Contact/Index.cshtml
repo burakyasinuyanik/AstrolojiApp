@@ -3,6 +3,7 @@
     ViewData["Title"] = "Index";
 }
 <h1>Contact Sayfası</h1>
+<a href="/Admin/Contact/Add"> yeni ekle</a>
 <div class="d-flex justify-content-center">
     <table class="table table-bordered">
         <thead>
@@ -24,8 +25,8 @@
                     
 
                     <td>
-                        <a href="/Edit" class="btn btn-primary btn-sm">Düzenle</a>
-                        <a href="/Delete" class="btn btn-danger btn-sm">Sil</a>
+                        <a asp-action="Update" asp-route-id="@contact.Id" class="btn btn-primary btn-sm">Düzenle</a>
+                        <a asp-action="Delete" asp-route-id="@contact.Id" class=" btn btn-danger btn-sm">Sil</a>
                     </td>
                 </tr>
             }

@@ -3,7 +3,7 @@
     ViewData["Title"] = "Index";
 }
 <h1>Astrology Comment</h1>
-
+<a href="/Admin/AstrologComment/Add"> yeni ekle</a>
 <div class="row row-cols-1 row-cols-md-3 g-4">
     @foreach (var astrgcmmt in Model)
     {
@@ -15,8 +15,10 @@
                     <h5 class="card-title">@astrgcmmt.Name</h5>
                     <p class="card-text">@astrgcmmt.Text</p>
                     <div class="d-flex justify-content-between mt-3">
-                        <a href="/Edit/@astrgcmmt.Id" class="btn btn-primary">Düzenle</a>
-                        <a href="/Delete/@astrgcmmt.Id" class="btn btn-danger">Sil</a>
+
+                        <a asp-action="Update" asp-route-id="@astrgcmmt.Id" class="btn btn-primary btn-sm">Düzenle</a>
+
+                        <a asp-action="Delete" asp-route-id="@astrgcmmt.Id" class="btn btn-danger btn-sm">Sil</a>
                     </div>
                 </div>
             </div>

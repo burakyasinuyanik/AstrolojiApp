@@ -24,9 +24,10 @@
 
 
     <main id="main" class="main">
+        @await Html.PartialAsync("_PageTitlePartical")
         @RenderBody()
         <!-- Start Page Title -->
-        @await Html.PartialAsync("_PageTitlePartical")
+       
         <!-- End Page Title -->
 
         <section class="section dashboard">
