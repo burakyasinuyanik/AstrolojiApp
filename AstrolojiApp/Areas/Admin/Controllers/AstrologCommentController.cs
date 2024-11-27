@@ -3,6 +3,7 @@ using Dapper;
 using Microsoft.AspNetCore.Mvc;
 using AstrolojiApp.Models;
 using AstrolojiApp.Areas.Admin.Data;
+using AstrolojiApp.Helper;
 
 namespace AstrolojiApp.Areas.Admin.Controllers
 {
@@ -40,7 +41,20 @@ namespace AstrolojiApp.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> Update(AstrologComment entity)
         {
+
+           
+            var astrologComments = await _astrologComment.GetAsync(entity.Id);
+
+
+            if (entity.Image is null)
+                entity.Image = astrologComments.Image;
+
+            var form = HttpContext.Request.Form.Files[0];
+
+            var ýmgPathAsString = await ImgHelper.ImgUpload(form);
+            entity.Image = ýmgPathAsString;
             var astrocomments = await _astrologComment.UpdateAsync(entity);
+
 
             return RedirectToAction("Index","AstrologComment");
         }
