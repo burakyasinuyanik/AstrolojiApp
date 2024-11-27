@@ -27,12 +27,48 @@ namespace AstrolojiApp.Areas.Admin.Controllers
 
             var astrologComments= await _astrologComment.GetAllAsync();
 
-            var oneAstrologComments = await _astrologComment.GetAsync(1);
-
+            return View(astrologComments);
+        }
+        [HttpGet]
+        public async Task<IActionResult> Update(int id)
+        {
+            var astrologComments = await _astrologComment.GetAsync(id);
             return View(astrologComments);
         }
 
-    }
 
+        [HttpPost]
+        public async Task<IActionResult> Update(AstrologComment entity)
+        {
+            var astrocomments = await _astrologComment.UpdateAsync(entity);
+
+            return RedirectToAction("Index","AstrologComment");
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Add()
+         {
+
+            return View();
+         }
+
+         [HttpPost]
+            public async Task<IActionResult> Add(AstrologComment entity)
+         {
+            var astrocomments = await _astrologComment.AddAsync(entity);
+
+            return RedirectToAction("Index", "AstrologComment");
+
+         }
+
+         [HttpGet]
+         public async Task<IActionResult> Delete(int id)
+         {
+            var result = await _astrologComment.DeleteAsync(id);
+
+            return RedirectToAction("Index", "AstrologComment");
+         }
+        
+    }
 
 }
