@@ -24,8 +24,42 @@ namespace AstrolojiApp.Areas.Admin.Controllers
 
             //var queryDailyNew = "select * from DailyNews";
             //var dailyNews = await connection.QueryAsync<DailyNew>(queryDailyNew);
-            var dailyNews=await _dailyNewRepository.GetAllAsync();
+            var dailyNews = await _dailyNewRepository.GetAllAsync();
             return View(dailyNews);
+        }
+        [HttpGet]
+        public async Task<IActionResult> Update(int id)
+        {
+            var dailynew = await _dailyNewRepository.GetAsync(id);
+            return View(dailynew);
+        }
+
+
+        [HttpPost]
+        public async Task<IActionResult> Update(DailyNew entity)
+        {
+            var dailynew = await _dailyNewRepository.UpdateAsync(entity);
+            return RedirectToAction("Index", "DailyNew");
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Add()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Add(DailyNew entity)
+        {
+            var dailynew = await _dailyNewRepository.AddAsync(entity);
+            return RedirectToAction("Index", "DailyNew");
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var dailynew = await _dailyNewRepository.DeleteAsync(id);
+            return RedirectToAction("Index", "DailyNew");
         }
 
     }
