@@ -88,10 +88,10 @@ INSERT INTO HoroscopeGroups
     ( Name, Image, HoroscopeNames)
 
 VALUES
-    ('Ateş Grubu', 'http://localhost:5100/Ui/assets/img/atesGrubu.jpg', 'Koç,Aslan,Yay'),
-    ('Toprak Grubu', 'http://localhost:5100/Ui/assets/img/toprakGrubu.jpg', 'Boğa,Başak,Oğlak'),
-    ('Hava Grubu', 'http://localhost:5100/Ui/assets/img/havaGrubu1.jpg', 'İkizler,Terazi,Kova'),
-    ('Su Grubu', 'http://localhost:5100/Ui/assets/img/suGrubu1.jpg', 'Yengeç,Akrep,Balık')
+    ('Ateş Grubu', 'http://localhost:5100/Ui/assets/img/AtesGrubu.jpg', 'Koç,Aslan,Yay'),
+    ('Toprak Grubu', 'http://localhost:5100/Ui/assets/img/ToprakGrubu.jpg', 'Boğa,Başak,Oğlak'),
+    ('Hava Grubu', 'http://localhost:5100/Ui/assets/img/HavaGrubu.jpg', 'İkizler,Terazi,Kova'),
+    ('Su Grubu', 'http://localhost:5100/Ui/assets/img/SuGrubu.jpg', 'Yengeç,Akrep,Balık')
 
 go
 
@@ -109,18 +109,18 @@ INSERT INTO Horoscopes
     ( Name, Image, DateRange)
 
 VALUES
-    ('Koç', 'http://localhost:5100/Ui/assets/img/kocc.jpg', '21 Mart - 19 Nisan'),
-    ('Boğa', 'http://localhost:5100/Ui/assets/img/bogaa.jpg', '20 Nisan - 20 Mayıs'),
-    ('İkizler', 'http://localhost:5100/Ui/assets/img/ikizlerr.jpg', '21 Mayıs - 20 Haziran'),
-    ('Yengeç', 'http://localhost:5100/Ui/assets/img/yengecc.jpg', '21 Haziran - 22 Temmuz'),
-    ('Aslan', 'http://localhost:5100/Ui/assets/img/aslann.jpg', '23 Temmuz - 22 Ağustos'),
-    ('Başak', 'http://localhost:5100/Ui/assets/img/basakk.jpg', '23 Ağustos - 22 Eylül'),
-    ('Terazi', 'http://localhost:5100/Ui/assets/img/terazii.jpg', '23 Eylül - 22 Ekim'),
-    ('Akrep', 'http://localhost:5100/Ui/assets/img/akrepp.jpg', '23 Ekim - 21 Kasım'),
-    ('Yay', 'http://localhost:5100/Ui/assets/img/yayy.jpg', '22 Kasım - 21 Aralık'),
-    ('Oğlak', 'http://localhost:5100/Ui/assets/img/oglakk.jpg', '22 Aralık - 19 Ocak'),
-    ('Kova', 'http://localhost:5100/Ui/assets/img/kovaa.jpg', '20 Ocak - 18 Şubat'),
-    ('Balık', 'http://localhost:5100/Ui/assets/img/balıkk.jpg', '19 Şubat - 20 Mart')
+    ('Koç', 'http://localhost:5100/Ui/assets/img/Koc.jpg', '21 Mart - 19 Nisan'),
+    ('Boğa', 'http://localhost:5100/Ui/assets/img/Boga.jpg', '20 Nisan - 20 Mayıs'),
+    ('İkizler', 'http://localhost:5100/Ui/assets/img/Ikızler.jpg', '21 Mayıs - 20 Haziran'),
+    ('Yengeç', 'http://localhost:5100/Ui/assets/img/Yengec.jpg', '21 Haziran - 22 Temmuz'),
+    ('Aslan', 'http://localhost:5100/Ui/assets/img/Aslan.jpg', '23 Temmuz - 22 Ağustos'),
+    ('Başak', 'http://localhost:5100/Ui/assets/img/Basak.jpg', '23 Ağustos - 22 Eylül'),
+    ('Terazi', 'http://localhost:5100/Ui/assets/img/Terazi.jpg', '23 Eylül - 22 Ekim'),
+    ('Akrep', 'http://localhost:5100/Ui/assets/img/Akrep.jpg', '23 Ekim - 21 Kasım'),
+    ('Yay', 'http://localhost:5100/Ui/assets/img/Yay.jpg', '22 Kasım - 21 Aralık'),
+    ('Oğlak', 'http://localhost:5100/Ui/assets/img/Oglak.jpg', '22 Aralık - 19 Ocak'),
+    ('Kova', 'http://localhost:5100/Ui/assets/img/Kova.jpg', '20 Ocak - 18 Şubat'),
+    ('Balık', 'http://localhost:5100/Ui/assets/img/Balık.jpg', '19 Şubat - 20 Mart')
 
 go
 
