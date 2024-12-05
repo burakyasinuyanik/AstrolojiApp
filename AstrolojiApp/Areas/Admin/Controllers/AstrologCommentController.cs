@@ -26,7 +26,7 @@ namespace AstrolojiApp.Areas.Admin.Controllers
             //var queryAstrologComment = "select * from AstrologComment";
             //var astrologComments = await connection.QueryAsync<AstrologComment>(queryAstrologComment);
 
-            var astrologComments= await _astrologComment.GetAllAsync();
+            var astrologComments = await _astrologComment.GetAllAsync();
 
             return View(astrologComments);
         }
@@ -42,7 +42,7 @@ namespace AstrolojiApp.Areas.Admin.Controllers
         public async Task<IActionResult> Update(AstrologComment entity)
         {
 
-           
+
             var astrologComments = await _astrologComment.GetAsync(entity.Id);
 
 
@@ -51,38 +51,38 @@ namespace AstrolojiApp.Areas.Admin.Controllers
 
             var form = HttpContext.Request.Form.Files[0];
 
-            var ýmgPathAsString = await ImgHelper.ImgUpload(form);
-            entity.Image = ýmgPathAsString;
+            var imgPathAsString = await ImgHelper.ImgUpload(form);
+            entity.Image = imgPathAsString;
             var astrocomments = await _astrologComment.UpdateAsync(entity);
 
 
-            return RedirectToAction("Index","AstrologComment");
+            return RedirectToAction("Index", "AstrologComment");
         }
 
         [HttpGet]
         public async Task<IActionResult> Add()
-         {
+        {
 
             return View();
-         }
+        }
 
-         [HttpPost]
-            public async Task<IActionResult> Add(AstrologComment entity)
-         {
+        [HttpPost]
+        public async Task<IActionResult> Add(AstrologComment entity)
+        {
             var astrocomments = await _astrologComment.AddAsync(entity);
 
             return RedirectToAction("Index", "AstrologComment");
 
-         }
+        }
 
-         [HttpGet]
-         public async Task<IActionResult> Delete(int id)
-         {
+        [HttpGet]
+        public async Task<IActionResult> Delete(int id)
+        {
             var result = await _astrologComment.DeleteAsync(id);
 
             return RedirectToAction("Index", "AstrologComment");
-         }
-        
+        }
+
     }
 
 }
