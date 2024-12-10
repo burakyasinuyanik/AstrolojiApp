@@ -20,10 +20,10 @@ go
 insert into AppSettings
     (WorkingHours, BrandName,ImageUrl,Title, AboutText,HoroscopeName, PhoneNumber,Email)
 VALUES
-(
+    (
         'Çalışma Saatleri: Salı - Ctesi: 10.00 - 19.00 | Pazar - Ptesi: Tatil',
         'Bir Başka Yol',
-        'http://localhost:5100/Ui/assets/img/spacePhoto.jpg',
+        'http://localhost:5100/Ui/assets/img/photoast.jpg',
         '"Yıldızlarınız Söylesin, Hayatınızı Keşfedin!"',
         'Burç yorumları, astrolojik analizler ve kişisel harita rehberliğiyle hayatınızı daha iyi anlayın. Günlük, haftalık ve aylık burç yorumlarınızı hemen öğrenin. Astrolojiye dair her şey burada! Günlük burç yorumları, gezegen konumları, yükselen burçlar ve kişisel astroloji analiziyle hayatınızı yönlendirin. Burçlarınızı ve gezegen hareketlerini keşfedin. Günlük yorumlarla hayatınızda ne gibi değişiklikler olabileceğini öğrenin ve astrolojik rehberlikle geleceğinizi şekillendirin.',
         'Koç, Boğa, İkizler, Yengeç, Aslan, Başak, Terazi, Akrep, Yay, Oğlak, Kova, Balık',
@@ -88,10 +88,10 @@ INSERT INTO HoroscopeGroups
     ( Name, Image, HoroscopeNames)
 
 VALUES
-    ('Ateş Grubu', 'http://localhost:5100/Ui/assets/img/atesGrubu.jpg', 'Koç,Aslan,Yay'),
-    ('Toprak Grubu', 'http://localhost:5100/Ui/assets/img/toprakGrubu.jpg', 'Boğa,Başak,Oğlak'),
-    ('Hava Grubu', 'http://localhost:5100/Ui/assets/img/havaGrubu1.jpg', 'İkizler,Terazi,Kova'),
-    ('Su Grubu', 'http://localhost:5100/Ui/assets/img/suGrubu1.jpg', 'Yengeç,Akrep,Balık')
+    ('Ateş Grubu', 'http://localhost:5100/Ui/assets/img/AtesGrubu.jpg', 'Koç,Aslan,Yay'),
+    ('Toprak Grubu', 'http://localhost:5100/Ui/assets/img/ToprakGrubu.jpg', 'Boğa,Başak,Oğlak'),
+    ('Hava Grubu', 'http://localhost:5100/Ui/assets/img/HavaGrubu.jpg', 'İkizler,Terazi,Kova'),
+    ('Su Grubu', 'http://localhost:5100/Ui/assets/img/SuGrubu.jpg', 'Yengeç,Akrep,Balık')
 
 go
 
@@ -109,18 +109,18 @@ INSERT INTO Horoscopes
     ( Name, Image, DateRange)
 
 VALUES
-    ('Koç', 'http://localhost:5100/Ui/assets/img/koc.jpg', '21 Mart - 19 Nisan'),
-    ('Boğa', 'http://localhost:5100/Ui/assets/img/boga.jpg', '20 Nisan - 20 Mayıs'),
-    ('İkizler', 'http://localhost:5100/Ui/assets/img/ikizler.jpg', '21 Mayıs - 20 Haziran'),
-    ('Yengeç', 'http://localhost:5100/Ui/assets/img/yengec.jpg', '21 Haziran - 22 Temmuz'),
-    ('Aslan', 'http://localhost:5100/Ui/assets/img/aslan.jpg', '23 Temmuz - 22 Ağustos'),
-    ('Başak', 'http://localhost:5100/Ui/assets/img/basak.jpg', '23 Ağustos - 22 Eylül'),
-    ('Terazi', 'http://localhost:5100/Ui/assets/img/terazi.jpg', '23 Eylül - 22 Ekim'),
-    ('Akrep', 'http://localhost:5100/Ui/assets/img/akrep.jpg', '23 Ekim - 21 Kasım'),
-    ('Yay', 'http://localhost:5100/Ui/assets/img/yay.jpg', '22 Kasım - 21 Aralık'),
-    ('Oğlak', 'http://localhost:5100/Ui/assets/img/oglak.jpg', '22 Aralık - 19 Ocak'),
-    ('Kova', 'http://localhost:5100/Ui/assets/img/kova.jpg', '20 Ocak - 18 Şubat'),
-    ('Balık', 'http://localhost:5100/Ui/assets/img/balık.jpg', '19 Şubat - 20 Mart')
+    ('Koç', 'http://localhost:5100/Ui/assets/img/Koc.jpg', '21 Mart - 19 Nisan'),
+    ('Boğa', 'http://localhost:5100/Ui/assets/img/Boga.jpg', '20 Nisan - 20 Mayıs'),
+    ('İkizler', 'http://localhost:5100/Ui/assets/img/Ikızler.jpg', '21 Mayıs - 20 Haziran'),
+    ('Yengeç', 'http://localhost:5100/Ui/assets/img/Yengec.jpg', '21 Haziran - 22 Temmuz'),
+    ('Aslan', 'http://localhost:5100/Ui/assets/img/Aslan.jpg', '23 Temmuz - 22 Ağustos'),
+    ('Başak', 'http://localhost:5100/Ui/assets/img/Basak.jpg', '23 Ağustos - 22 Eylül'),
+    ('Terazi', 'http://localhost:5100/Ui/assets/img/Terazi.jpg', '23 Eylül - 22 Ekim'),
+    ('Akrep', 'http://localhost:5100/Ui/assets/img/Akrep.jpg', '23 Ekim - 21 Kasım'),
+    ('Yay', 'http://localhost:5100/Ui/assets/img/Yay.jpg', '22 Kasım - 21 Aralık'),
+    ('Oğlak', 'http://localhost:5100/Ui/assets/img/Oglak.jpg', '22 Aralık - 19 Ocak'),
+    ('Kova', 'http://localhost:5100/Ui/assets/img/Kova.jpg', '20 Ocak - 18 Şubat'),
+    ('Balık', 'http://localhost:5100/Ui/assets/img/Balık.jpg', '19 Şubat - 20 Mart')
 
 go
 
@@ -129,7 +129,7 @@ CREATE TABLE Services
     Id INT PRIMARY KEY identity,
     Name VARCHAR(255) not NULL,
     Title NVARCHAR(2000) not NULL
-    
+
 );
 GO
 INSERT INTO Services
@@ -190,31 +190,31 @@ CREATE TABLE HoroscopeComments
 )
 
 insert into HoroscopeComments
-(HoroscopeId, Daily,Monthly,Annual )
+    (HoroscopeId, Daily,Monthly,Annual )
 
 VALUES
 
-(1, 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.', 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.', 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.'),
+    (1, 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.', 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.', 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.'),
 
-(2, 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.', 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.', 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.'),
+    (2, 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.', 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.', 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.'),
 
-(3, 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.', 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.', 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.'),
+    (3, 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.', 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.', 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.'),
 
-(4, 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.', 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.', 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.'),
+    (4, 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.', 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.', 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.'),
 
-(5, 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.', 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.', 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.'),
+    (5, 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.', 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.', 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.'),
 
-(6, 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.', 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.', 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.'),
+    (6, 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.', 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.', 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.'),
 
-(7, 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.', 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.', 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.'),
+    (7, 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.', 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.', 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.'),
 
-(8, 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.', 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.', 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.'),
+    (8, 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.', 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.', 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.'),
 
-(9, 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.', 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.', 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.'),
+    (9, 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.', 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.', 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.'),
 
-(10, 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.', 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.', 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.'),
+    (10, 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.', 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.', 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.'),
 
-(11, 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.', 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.', 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.'),
+    (11, 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.', 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.', 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.'),
 
-(12, 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.', 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.', 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.')
+    (12, 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.', 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.', 'Ruhunuzdaki zenginliği ve yaratıcılığı ortaya koyma zamanı, ilham perisi bugün sizin yanınızda olabilir. Ayrıca yardımsever, hayırsever yönlerinizi bugün daha çok gösterebilir, başkalarının iyiliği için çalışabilirsiniz.')
 
