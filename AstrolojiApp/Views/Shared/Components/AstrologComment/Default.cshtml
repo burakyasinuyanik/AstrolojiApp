@@ -1,0 +1,26 @@
+﻿@model IEnumerable<AstrologComment>
+@{
+    ViewData["Title"] = "View";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@foreach (var item in Model)
+{
+    <div class="swiper-slide">
+        <div class="testimonial-item">
+            <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+                @item.Text
+            </p>
+            <div class="profile mt-auto">
+                <img src="~/assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>@item.Name</h3>
+                <h4>Ceo &amp; Founder</h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- End testimonial item -->
+}

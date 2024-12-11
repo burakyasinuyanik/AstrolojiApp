@@ -34,7 +34,8 @@
           <i class="bi bi-telephone flex-shrink-0"></i>
           <div>
             <h3>Bizi arayın</h3>
-            <p>@Model.AppSetting.PhoneNumber</p>
+            @await Component.InvokeAsync("AppSetting")
+            
           </div>
         </div><!-- End Info Item -->
 
@@ -42,7 +43,8 @@
           <i class="bi bi-envelope flex-shrink-0"></i>
           <div>
             <h3>Bize yazın </h3>
-            <p>@Model.AppSetting.Email</p>
+            @await Component.InvokeAsync("AppSetting")
+            
           </div>
         </div><!-- End Info Item -->
 

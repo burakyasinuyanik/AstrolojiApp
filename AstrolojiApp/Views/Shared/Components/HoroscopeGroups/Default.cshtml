@@ -1,0 +1,17 @@
+﻿@model IEnumerable<HoroscopeGroup>
+@{
+    ViewData["Title"] = "View";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@foreach (var item in Model)
+{
+    <div class="col-md-6 icon-box position-relative">
+        <div class="image-container">
+            <img src="@item.Image" alt="@item.Name" class="img-fluid horoscope-img">
+        </div>
+
+        <h4><a href="" class="stretched-link">@item.Name</a></h4>
+        <p>@item.HoroscopeNames</p>
+    </div>
+}
