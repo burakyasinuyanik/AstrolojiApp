@@ -1,9 +1,10 @@
-﻿@model List<AppSetting>
+﻿@model AppSetting
 @{
     ViewData["Title"] = "View";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 
-<h1>View</h1>
-
+<p>@Model.AboutText</p>
+<p>@Model.Email</p>
+<p>@Model.PhoneNumber</p>
