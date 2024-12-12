@@ -25,13 +25,7 @@ public class HomeController : Controller
     public HomeController(IRepository<AppSetting> appsetting, IRepository<AstrologComment> astrologComment, IRepository<DailyNew> dailyNew, IRepository<Horoscope> horoscope, IRepository<HoroscopeGroup> horoscopeGroup, IRepository<Service> service, IRepository<SocialMedia> socialMedia, IRepository<Contact> contact)
     {
         _appsetting = appsetting;
-        _astrologComment = astrologComment;
-        _dailyNew = dailyNew;
-        _horoscope = horoscope;
-        _horoscopeGroup = horoscopeGroup;
-        _service = service;
-        _socialMedia = socialMedia;
-        _contact = contact;
+        
     }
 
     public async Task<IActionResult> Index()

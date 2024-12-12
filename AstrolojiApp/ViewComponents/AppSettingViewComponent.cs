@@ -20,7 +20,7 @@ namespace AstrolojiApp.ViewComponents
         {
            var appSetting= await _repositoryAppsSettingRepository.GetAllAsync();
 
-            return View(appSetting);
+            return View(appSetting.First());
         }
     }
 }
