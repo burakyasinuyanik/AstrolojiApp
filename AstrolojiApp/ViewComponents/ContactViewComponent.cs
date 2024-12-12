@@ -8,16 +8,16 @@ namespace AstrolojiApp.ViewComponents;
 public class ContactViewComponent :ViewComponent
 {
 
-    private readonly IRepository<Contact> _repositoryAppsSettingRepository;
+    private readonly IRepository<Contact> _repositoryContactRepository;
 
-    public ContactViewComponent(IRepository<Contact> repositoryAppsSettingRepository)
+    public ContactViewComponent(IRepository<Contact> repositoryContactRepository)
     {
-        _repositoryAppsSettingRepository = repositoryAppsSettingRepository;
+        _repositoryContactRepository = repositoryContactRepository;
     }
 
     public async Task<IViewComponentResult> InvokeAsync()
     {
-        var contacts = await _repositoryAppsSettingRepository.GetAllAsync();
+        var contacts = await _repositoryContactRepository.GetAllAsync();
 
         return View(contacts);
     }

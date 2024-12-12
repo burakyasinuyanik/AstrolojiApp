@@ -8,16 +8,16 @@ namespace AstrolojiApp.ViewComponents;
 public class HoroscopeViewComponent : ViewComponent
 
 {
-    private readonly IRepository<Horoscope> _repositoryAppsSettingRepository;
+    private readonly IRepository<Horoscope> _repositoryHoroscopeRepository;
 
-    public HoroscopeViewComponent(IRepository<Horoscope> repositoryAppsSettingRepository)
+    public HoroscopeViewComponent(IRepository<Horoscope> repositoryHoroscopeRepository)
     {
-        _repositoryAppsSettingRepository = repositoryAppsSettingRepository;
+        _repositoryHoroscopeRepository = repositoryHoroscopeRepository;
     }
 
     public async Task<IViewComponentResult> InvokeAsync()
     {
-        var horoscopes = await _repositoryAppsSettingRepository.GetAllAsync();
+        var horoscopes = await _repositoryHoroscopeRepository.GetAllAsync();
 
         return View(horoscopes);
     }

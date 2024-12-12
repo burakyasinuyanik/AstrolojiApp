@@ -8,16 +8,16 @@ namespace AstrolojiApp.ViewComponents;
 public class AstrologCommentViewComponent : ViewComponent
 {
 
-    private readonly IRepository<AstrologComment> _repositoryAppsSettingRepository;
+    private readonly IRepository<AstrologComment> _repositoryAstrologCommentRepository;
 
-    public AstrologCommentViewComponent(IRepository<AstrologComment> repositoryAppsSettingRepository)
+    public AstrologCommentViewComponent(IRepository<AstrologComment> repositoryAstrologCommentRepository)
     {
-        _repositoryAppsSettingRepository = repositoryAppsSettingRepository;
+        _repositoryAstrologCommentRepository = repositoryAstrologCommentRepository;
     }
 
     public async Task<IViewComponentResult> InvokeAsync()
     {
-        var astrologComments = await _repositoryAppsSettingRepository.GetAllAsync();
+        var astrologComments = await _repositoryAstrologCommentRepository.GetAllAsync();
 
         return View(astrologComments);
     }

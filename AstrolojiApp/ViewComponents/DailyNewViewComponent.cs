@@ -7,17 +7,17 @@ namespace AstrolojiApp.ViewComponents;
 
 public class DailyNewViewComponent : ViewComponent
 {
-    private readonly IRepository<DailyNew> _repositoryAppsSettingRepository;
+    private readonly IRepository<DailyNew> _repositoryDailyNewRepository;
 
-    public DailyNewViewComponent(IRepository<DailyNew> repositoryAppsSettingRepository)
+    public DailyNewViewComponent(IRepository<DailyNew> repositoryDailyNewRepository)
     {
-        _repositoryAppsSettingRepository = repositoryAppsSettingRepository;
+        _repositoryDailyNewRepository = repositoryDailyNewRepository;
     }
 
 
     public async Task<IViewComponentResult> InvokeAsync()
     {
-        var dailyNews = await _repositoryAppsSettingRepository.GetAllAsync();
+        var dailyNews = await _repositoryDailyNewRepository.GetAllAsync();
 
         return View(dailyNews);
     }

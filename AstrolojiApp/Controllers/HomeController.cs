@@ -41,25 +41,25 @@ public class HomeController : Controller
 
 
         var applist = await _appsetting.GetAllAsync();
-        var comments = await _astrologComment.GetAllAsync();
-        var dailyNews = await _dailyNew.GetAllAsync();
-        var horoscopes = await _horoscope.GetAllAsync();
-        var horoscopeGroups = await _horoscopeGroup.GetAllAsync();
-        var services = await _service.GetAllAsync();
-        var socialMedia = await _socialMedia.GetAllAsync();
-        var contact = await _contact.GetAllAsync();
+        // var comments = await _astrologComment.GetAllAsync();
+        // var dailyNews = await _dailyNew.GetAllAsync();
+        // var horoscopes = await _horoscope.GetAllAsync();
+        // var horoscopeGroups = await _horoscopeGroup.GetAllAsync();
+        // var services = await _service.GetAllAsync();
+        // var socialMedia = await _socialMedia.GetAllAsync();
+        // var contact = await _contact.GetAllAsync();
 
 
         HomePageModel homePageModel = new HomePageModel();
 
         homePageModel.AppSetting = applist.First();
-        homePageModel.AstrologComments = comments;
-        homePageModel.DailyNews = dailyNews;
-        homePageModel.Horoscopes = horoscopes;
-        homePageModel.Services = services;
-        homePageModel.HoroscopeGroups = horoscopeGroups;
-        homePageModel.SocialMedia = socialMedia;
-        homePageModel.Contact = contact;
+        // homePageModel.AstrologComments = comments;
+        // homePageModel.DailyNews = dailyNews;
+        // homePageModel.Horoscopes = horoscopes;
+        // homePageModel.Services = services;
+        // homePageModel.HoroscopeGroups = horoscopeGroups;
+        // homePageModel.SocialMedia = socialMedia;
+        // homePageModel.Contact = contact;
 
         return View(homePageModel);
 
