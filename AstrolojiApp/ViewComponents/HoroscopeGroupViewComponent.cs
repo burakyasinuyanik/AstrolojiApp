@@ -7,17 +7,17 @@ namespace AstrolojiApp.ViewComponents;
 
 public class HoroscopeGroupViewComponent : ViewComponent
 {
-    private readonly IRepository<HoroscopeGroup> _repositoryAppsSettingRepository;
+    private readonly IRepository<HoroscopeGroup> _repositoryHoroscopeGroupRepository;
 
-    public HoroscopeGroupViewComponent(IRepository<HoroscopeGroup> repositoryAppsSettingRepository)
+    public HoroscopeGroupViewComponent(IRepository<HoroscopeGroup> repositoryHoroscopeGroupRepository)
     {
-        _repositoryAppsSettingRepository = repositoryAppsSettingRepository;
+        _repositoryHoroscopeGroupRepository = repositoryHoroscopeGroupRepository;
     }
 
 
     public async Task<IViewComponentResult> InvokeAsync()
     {
-        var horoscopeGroups = await _repositoryAppsSettingRepository.GetAllAsync();
+        var horoscopeGroups = await _repositoryHoroscopeGroupRepository.GetAllAsync();
 
         return View(horoscopeGroups);
     }
