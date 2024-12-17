@@ -111,7 +111,7 @@ INSERT INTO Horoscopes
 VALUES
     ('Koç', 'http://localhost:5100/Ui/assets/img/Koc.jpg', '21 Mart - 19 Nisan'),
     ('Boğa', 'http://localhost:5100/Ui/assets/img/Boga.jpg', '20 Nisan - 20 Mayıs'),
-    ('İkizler', 'http://localhost:5100/Ui/assets/img/Ikızler.jpg', '21 Mayıs - 20 Haziran'),
+    ('İkizler', 'http://localhost:5100/Ui/assets/img/ikizler.jpg', '21 Mayıs - 20 Haziran'),
     ('Yengeç', 'http://localhost:5100/Ui/assets/img/Yengec.jpg', '21 Haziran - 22 Temmuz'),
     ('Aslan', 'http://localhost:5100/Ui/assets/img/Aslan.jpg', '23 Temmuz - 22 Ağustos'),
     ('Başak', 'http://localhost:5100/Ui/assets/img/Basak.jpg', '23 Ağustos - 22 Eylül'),
@@ -120,7 +120,7 @@ VALUES
     ('Yay', 'http://localhost:5100/Ui/assets/img/Yay.jpg', '22 Kasım - 21 Aralık'),
     ('Oğlak', 'http://localhost:5100/Ui/assets/img/Oglak.jpg', '22 Aralık - 19 Ocak'),
     ('Kova', 'http://localhost:5100/Ui/assets/img/Kova.jpg', '20 Ocak - 18 Şubat'),
-    ('Balık', 'http://localhost:5100/Ui/assets/img/Balık.jpg', '19 Şubat - 20 Mart')
+    ('Balık', 'http://localhost:5100/Ui/assets/img/balik.jpg', '19 Şubat - 20 Mart')
 
 go
 
