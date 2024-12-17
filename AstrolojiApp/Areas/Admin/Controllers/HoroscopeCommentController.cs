@@ -25,11 +25,33 @@ namespace AstrolojiApp.Areas.Admin.Controllers
             return View(HoroscopeComments);
         }
 
+        [HttpGet]
+        public async Task<IActionResult> Update(int id)
+        {
+            var horoscopeComment = await _horoscopecommentRepository.GetAsync(id);
+
+            return View(horoscopeComment);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Update(HoroscopeComment entity)
+        {
+            var horoscopeComment = await _horoscopecommentRepository.UpdateAsync(entity);
+
+            return RedirectToAction("Index", "horoscope");
+        }
+
+        [HttpGet]
         public async Task<IActionResult> Delete(int id)
         {
             var result = await _horoscopecommentRepository.DeleteAsync(id);
+
             return RedirectToAction("Index", "HoroscopeComment");
         }
+
+
+
+
 
     }
 }
