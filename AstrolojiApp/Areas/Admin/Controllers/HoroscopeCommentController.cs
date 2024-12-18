@@ -1,6 +1,7 @@
 using System.Data.SqlClient;
 using System.Security.Cryptography.X509Certificates;
 using AstrolojiApp.Areas.Admin.Data;
+using AstrolojiApp.Areas.Admin.Dto;
 using AstrolojiApp.Models;
 using Dapper;
 using Microsoft.AspNetCore.Mvc;
@@ -12,11 +13,14 @@ namespace AstrolojiApp.Areas.Admin.Controllers
     public class HoroscopeCommentController : Controller
     {
         private readonly IRepository<HoroscopeComment> _horoscopecommentRepository;
+        private readonly IRepository<HoroscopeCommentDto> _horoscopeCommentUpdateRepository;
 
-        public HoroscopeCommentController(IRepository<HoroscopeComment> horoscopecommentRepository)
+        public HoroscopeCommentController(IRepository<HoroscopeComment> horoscopecommentRepository, IRepository<HoroscopeCommentDto> horoscopeCommentUpdateRepository)
         {
             _horoscopecommentRepository = horoscopecommentRepository;
+            _horoscopeCommentUpdateRepository = horoscopeCommentUpdateRepository;
         }
+
 
         // GET: HoroscopeCommentController
         public async Task<ActionResult> Index()
@@ -34,11 +38,11 @@ namespace AstrolojiApp.Areas.Admin.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Update(HoroscopeComment entity)
+        public async Task<IActionResult> Update(HoroscopeCommentDto entity)
         {
-            var horoscopeComment = await _horoscopecommentRepository.UpdateAsync(entity);
+            var horoscopeComment = await _horoscopeCommentUpdateRepository.UpdateAsync(entity);
 
-            return RedirectToAction("Index", "horoscope");
+            return RedirectToAction("Index", "horoscopeComment");
         }
 
         [HttpGet]
