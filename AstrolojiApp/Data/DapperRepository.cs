@@ -19,6 +19,11 @@ public class DapperRepository<T> : IRepository<T> where T : class
 
         _tableName = typeof(T).Name;
 
+        if (_tableName.EndsWith("Dto"))
+        {
+            _tableName = _tableName.Substring(0,_tableName.Length - 3);
+        }
+
         if (_tableName.EndsWith("y"))
         {
 
