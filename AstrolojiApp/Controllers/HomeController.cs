@@ -25,8 +25,9 @@ public class HomeController : Controller
     public HomeController(IRepository<AppSetting> appsetting, IRepository<AstrologComment> astrologComment, IRepository<DailyNew> dailyNew, IRepository<Horoscope> horoscope, IRepository<HoroscopeGroup> horoscopeGroup, IRepository<Service> service, IRepository<SocialMedia> socialMedia, IRepository<Contact> contact)
     {
         _appsetting = appsetting;
-        
+
     }
+    //yorum
 
     public async Task<IActionResult> Index()
     {
@@ -60,7 +61,7 @@ public class HomeController : Controller
         //yorum
     }
 
-    
+
 
 
 }
