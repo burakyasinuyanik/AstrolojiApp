@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Hp\\Documents\\GitHub\\AstrolojiApp\\AstrolojiApp.Shared\\AstrolojiApp.Shared.csproj": {}
+    "D:\\GitHubb\\AstrolojiApp\\AstrolojiApp.Shared\\AstrolojiApp.Shared.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Hp\\Documents\\GitHub\\AstrolojiApp\\AstrolojiApp.Shared\\AstrolojiApp.Shared.csproj": {
+    "D:\\GitHubb\\AstrolojiApp\\AstrolojiApp.Shared\\AstrolojiApp.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hp\\Documents\\GitHub\\AstrolojiApp\\AstrolojiApp.Shared\\AstrolojiApp.Shared.csproj",
+        "projectUniqueName": "D:\\GitHubb\\AstrolojiApp\\AstrolojiApp.Shared\\AstrolojiApp.Shared.csproj",
         "projectName": "AstrolojiApp.Shared",
-        "projectPath": "C:\\Users\\Hp\\Documents\\GitHub\\AstrolojiApp\\AstrolojiApp.Shared\\AstrolojiApp.Shared.csproj",
-        "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hp\\Documents\\GitHub\\AstrolojiApp\\AstrolojiApp.Shared\\obj\\",
+        "projectPath": "D:\\GitHubb\\AstrolojiApp\\AstrolojiApp.Shared\\AstrolojiApp.Shared.csproj",
+        "packagesPath": "C:\\Users\\samet\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHubb\\AstrolojiApp\\AstrolojiApp.Shared\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\samet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -61,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
