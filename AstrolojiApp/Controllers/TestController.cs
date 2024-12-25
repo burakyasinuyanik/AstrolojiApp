@@ -8,10 +8,6 @@ namespace AstrolojiApp.Controllers
         {
             return View();
         }
-
-        public IActionResult Match()
-        {
-            return View();
-        }
+   
     }
 }

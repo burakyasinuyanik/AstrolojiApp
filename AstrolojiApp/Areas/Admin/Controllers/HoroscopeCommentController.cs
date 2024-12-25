@@ -3,7 +3,7 @@ using System.Security.Cryptography.X509Certificates;
 using AstrolojiApp.Areas.Admin.Data;
 using AstrolojiApp.Areas.Admin.Dto;
 using AstrolojiApp.Models;
-using Dapper;
+
 using Microsoft.AspNetCore.Mvc;
 
 

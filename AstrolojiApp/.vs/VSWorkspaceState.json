@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Areas",
+    "\\Areas\\Admin",
+    "\\Areas\\Admin\\Controllers",
+    "\\Areas\\Admin\\Views",
+    "\\Areas\\Admin\\Views\\Home"
+  ],
+  "SelectedNode": "\\Areas\\Admin\\Controllers\\HoroscopeGroupController.cs",
+  "PreviewInSolutionExplorer": false
+}

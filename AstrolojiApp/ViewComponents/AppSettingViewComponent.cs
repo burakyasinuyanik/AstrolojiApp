@@ -1,6 +1,6 @@
 ﻿using System.Data;
 using AstrolojiApp.Areas.Admin.Data;
-using AstrolojiApp.Models;
+using AstrolojiApp.Entity.Concrete;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AstrolojiApp.ViewComponents

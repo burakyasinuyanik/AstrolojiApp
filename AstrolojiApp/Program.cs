@@ -1,17 +1,17 @@
 using System.Data;
 using System.Data.Common;
 using AstrolojiApp.Areas.Admin.Data;
+using AstrolojiApp.Data.Abstract;
+using AstrolojiApp.Data.Concrete.Context;
 using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddScoped<IDbConnection>(O=>
+builder.Services.AddDbContext<AppDbContext>(option => option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-    new SqlConnection(builder.Configuration.GetConnectionString("DefaultConnection"))
-);
-builder.Services.AddScoped(typeof(IRepository<>),typeof(DapperRepository<>));
 
 
 var app = builder.Build();
