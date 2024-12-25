@@ -11,4 +11,8 @@
     <ProjectReference Include="..\AstrolojiApp.Shared\AstrolojiApp.Shared.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Concrete\" />
+  </ItemGroup>
+
 </Project>

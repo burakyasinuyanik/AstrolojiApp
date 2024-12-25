@@ -1,9 +1,8 @@
-using System.Data;
-using System.Data.Common;
-using AstrolojiApp.Areas.Admin.Data;
+
+
 using AstrolojiApp.Data.Abstract;
 using AstrolojiApp.Data.Concrete.Context;
-using Microsoft.Data.SqlClient;
+using AstrolojiApp.Data.Concrete.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

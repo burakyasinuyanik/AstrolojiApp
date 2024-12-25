@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AstrolojiApp.UI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1e0e8e3f0940301b4003d960aa3c296424968e0b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+63b066b3cd5dbfda6ef386cff83d6d8b473417ed")]
 [assembly: System.Reflection.AssemblyProductAttribute("AstrolojiApp.UI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AstrolojiApp.UI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
