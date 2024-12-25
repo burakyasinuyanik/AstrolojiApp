@@ -11,6 +11,18 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<AppDbContext>(option => option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+builder.Services.AddScoped<IAppSettingRepository, AppSettingRepository>();
+builder.Services.AddScoped<IAstrologCommentRepository, AstrologCommentRepository>();
+builder.Services.AddScoped<IContactRepository, ContactRepository>();
+builder.Services.AddScoped<IDailyNewRepository, DailyNewRepository>();
+builder.Services.AddScoped<IHoroscopeCommentRepository, HoroscopeCommentRepository>();
+builder.Services.AddScoped<IHoroscopeGroupRepository, HoroscopeGroupRepository>();
+builder.Services.AddScoped<IHoroscopeRepository, HoroscopeRepository>();
+builder.Services.AddScoped<IServiceRepository, ServiceRepository>();
+builder.Services.AddScoped<ISocialMediaRepository, SocialMediaRepository>();
+
+
+
 
 
 var app = builder.Build();
