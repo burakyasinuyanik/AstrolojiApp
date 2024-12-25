@@ -9,235 +9,237 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AstrolojiApp.UI
 build_property.RootNamespace = AstrolojiApp.UI
-build_property.ProjectDir = D:\GitHubb\AstrolojiApp\AstrolojiApp\
+build_property.ProjectDir = C:\Users\brk_y\source\repos\burakyasinuyanik\AstrolojiApp\AstrolojiApp\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\GitHubb\AstrolojiApp\AstrolojiApp
+build_property.MSBuildProjectDirectory = C:\Users\brk_y\source\repos\burakyasinuyanik\AstrolojiApp\AstrolojiApp
 build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/AstrologComment/Add.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/AstrologComment/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQXN0cm9sb2dDb21tZW50XEFkZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/AstrologComment/Index.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/AstrologComment/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQXN0cm9sb2dDb21tZW50XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/AstrologComment/Update.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/AstrologComment/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQXN0cm9sb2dDb21tZW50XFVwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/Contact/Add.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/Contact/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ29udGFjdFxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/Contact/Index.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/Contact/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ29udGFjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/Contact/Update.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/Contact/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ29udGFjdFxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/DailyNew/Add.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/DailyNew/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGFpbHlOZXdcQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/DailyNew/Index.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/DailyNew/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGFpbHlOZXdcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/DailyNew/Update.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/DailyNew/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGFpbHlOZXdcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/Home/Index.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/HoroscopeComment/Index.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/HoroscopeComment/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9yb3Njb3BlQ29tbWVudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/HoroscopeComment/Update.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/HoroscopeComment/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9yb3Njb3BlQ29tbWVudFxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/HoroscopeGroup/Index.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/HoroscopeGroup/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9yb3Njb3BlR3JvdXBcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/Horoscope/Index.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/Horoscope/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9yb3Njb3BlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/Services/Add.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/Services/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2VydmljZXNcQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/Services/Index.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/Services/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2VydmljZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/Services/Update.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/Services/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2VydmljZXNcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/Shared/_FooterPartical.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/Shared/_FooterPartical.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9Gb290ZXJQYXJ0aWNhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/Shared/_HeaderPartical.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/Shared/_HeaderPartical.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9IZWFkZXJQYXJ0aWNhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/Shared/_Layout.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/Shared/_MainClumPartical.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/Shared/_MainClumPartical.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9NYWluQ2x1bVBhcnRpY2FsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/Shared/_PageTitlePartical.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/Shared/_PageTitlePartical.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9QYWdlVGl0bGVQYXJ0aWNhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/Shared/_ScriptPartical.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/Shared/_ScriptPartical.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9TY3JpcHRQYXJ0aWNhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/Shared/_SideBarPartical.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/Shared/_SideBarPartical.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9TaWRlQmFyUGFydGljYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/Shared/_StylePartical.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/Shared/_StylePartical.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9TdHlsZVBhcnRpY2FsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/Social/Add.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/Social/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU29jaWFsXEFkZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/Social/Index.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/Social/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU29jaWFsXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/Social/Update.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/Social/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU29jaWFsXFVwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/_ViewImports.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/_ViewStart.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Areas/Admin/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Views/Home/Index.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Views/HoroscopeComment/Index.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Views/HoroscopeComment/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9yb3Njb3BlQ29tbWVudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Views/Shared/Components/AppSetting/Default.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Views/Shared/Components/AppSetting/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQXBwU2V0dGluZ1xEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Views/Shared/Components/AstrologComment/Default.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Views/Shared/Components/AstrologComment/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQXN0cm9sb2dDb21tZW50XERlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Views/Shared/Components/Contact/Default.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Views/Shared/Components/Contact/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ29udGFjdFxEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Views/Shared/Components/DailyNew/Default.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Views/Shared/Components/DailyNew/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRGFpbHlOZXdcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Views/Shared/Components/HoroscopeGroup/Default.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Views/Shared/Components/HoroscopeGroup/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcSG9yb3Njb3BlR3JvdXBcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Views/Shared/Components/Horoscope/Default.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Views/Shared/Components/Horoscope/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcSG9yb3Njb3BlXERlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Views/Shared/Components/Service/Default.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Views/Shared/Components/Service/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2VydmljZVxEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Views/Shared/Error.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Views/Shared/_AboutSectionPartial.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Views/Shared/_AboutSectionPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BYm91dFNlY3Rpb25QYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Views/Shared/_ContactSectionPartial.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Views/Shared/_ContactSectionPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Db250YWN0U2VjdGlvblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Views/Shared/_FeaturedServicesSectionPartial.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Views/Shared/_FeaturedServicesSectionPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9GZWF0dXJlZFNlcnZpY2VzU2VjdGlvblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Views/Shared/_FooterPartial.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Views/Shared/_FooterPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Gb290ZXJQYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Views/Shared/_HeaderPartial.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Views/Shared/_HeaderPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9IZWFkZXJQYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Views/Shared/_HeroSectionPartial.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Views/Shared/_HeroSectionPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9IZXJvU2VjdGlvblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Views/Shared/_PortfolioSectionPartial.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Views/Shared/_PortfolioSectionPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Qb3J0Zm9saW9TZWN0aW9uUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Views/Shared/_ScriptPartial.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Views/Shared/_ScriptPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TY3JpcHRQYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Views/Shared/_ServicesSectionPartial.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Views/Shared/_ServicesSectionPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TZXJ2aWNlc1NlY3Rpb25QYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Views/Shared/_StylePartial.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Views/Shared/_StylePartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TdHlsZVBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Views/Shared/_TestimonialsSectionPartial.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Views/Shared/_TestimonialsSectionPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9UZXN0aW1vbmlhbHNTZWN0aW9uUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Views/Test/Index.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Views/Test/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVzdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Views/_ViewImports.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Views/_ViewStart.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/GitHubb/AstrolojiApp/AstrolojiApp/Views/Shared/_Layout.cshtml]
+[C:/Users/brk_y/source/repos/burakyasinuyanik/AstrolojiApp/AstrolojiApp/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-d7d3aqvhhy

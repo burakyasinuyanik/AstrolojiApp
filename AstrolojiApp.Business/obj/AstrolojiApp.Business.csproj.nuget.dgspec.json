@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GitHubb\\AstrolojiApp\\AstrolojiApp.Business\\AstrolojiApp.Business.csproj": {}
+    "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.Business\\AstrolojiApp.Business.csproj": {}
   },
   "projects": {
-    "D:\\GitHubb\\AstrolojiApp\\AstrolojiApp.Business\\AstrolojiApp.Business.csproj": {
+    "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.Business\\AstrolojiApp.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHubb\\AstrolojiApp\\AstrolojiApp.Business\\AstrolojiApp.Business.csproj",
+        "projectUniqueName": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.Business\\AstrolojiApp.Business.csproj",
         "projectName": "AstrolojiApp.Business",
-        "projectPath": "D:\\GitHubb\\AstrolojiApp\\AstrolojiApp.Business\\AstrolojiApp.Business.csproj",
-        "packagesPath": "C:\\Users\\samet\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHubb\\AstrolojiApp\\AstrolojiApp.Business\\obj\\",
+        "projectPath": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.Business\\AstrolojiApp.Business.csproj",
+        "packagesPath": "C:\\Users\\brk_y\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\samet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\brk_y\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,18 +26,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\GitHubb\\AstrolojiApp\\AstrolojiApp.Data\\AstrolojiApp.Data.csproj": {
-                "projectPath": "D:\\GitHubb\\AstrolojiApp\\AstrolojiApp.Data\\AstrolojiApp.Data.csproj"
+              "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.Data\\AstrolojiApp.Data.csproj": {
+                "projectPath": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.Data\\AstrolojiApp.Data.csproj"
               },
-              "D:\\GitHubb\\AstrolojiApp\\AstrolojiApp.Shared\\AstrolojiApp.Shared.csproj": {
-                "projectPath": "D:\\GitHubb\\AstrolojiApp\\AstrolojiApp.Shared\\AstrolojiApp.Shared.csproj"
+              "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.Shared\\AstrolojiApp.Shared.csproj": {
+                "projectPath": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.Shared\\AstrolojiApp.Shared.csproj"
               }
             }
           }
@@ -51,7 +50,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -72,24 +72,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\GitHubb\\AstrolojiApp\\AstrolojiApp.Data\\AstrolojiApp.Data.csproj": {
+    "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.Data\\AstrolojiApp.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHubb\\AstrolojiApp\\AstrolojiApp.Data\\AstrolojiApp.Data.csproj",
+        "projectUniqueName": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.Data\\AstrolojiApp.Data.csproj",
         "projectName": "AstrolojiApp.Data",
-        "projectPath": "D:\\GitHubb\\AstrolojiApp\\AstrolojiApp.Data\\AstrolojiApp.Data.csproj",
-        "packagesPath": "C:\\Users\\samet\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHubb\\AstrolojiApp\\AstrolojiApp.Data\\obj\\",
+        "projectPath": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.Data\\AstrolojiApp.Data.csproj",
+        "packagesPath": "C:\\Users\\brk_y\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\samet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\brk_y\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -98,18 +98,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\GitHubb\\AstrolojiApp\\AstrolojiApp.Entity\\AstrolojiApp.Entity.csproj": {
-                "projectPath": "D:\\GitHubb\\AstrolojiApp\\AstrolojiApp.Entity\\AstrolojiApp.Entity.csproj"
+              "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.Entity\\AstrolojiApp.Entity.csproj": {
+                "projectPath": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.Entity\\AstrolojiApp.Entity.csproj"
               },
-              "D:\\GitHubb\\AstrolojiApp\\AstrolojiApp.Shared\\AstrolojiApp.Shared.csproj": {
-                "projectPath": "D:\\GitHubb\\AstrolojiApp\\AstrolojiApp.Shared\\AstrolojiApp.Shared.csproj"
+              "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.Shared\\AstrolojiApp.Shared.csproj": {
+                "projectPath": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.Shared\\AstrolojiApp.Shared.csproj"
               }
             }
           }
@@ -123,7 +122,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -150,24 +150,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\GitHubb\\AstrolojiApp\\AstrolojiApp.Entity\\AstrolojiApp.Entity.csproj": {
+    "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.Entity\\AstrolojiApp.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHubb\\AstrolojiApp\\AstrolojiApp.Entity\\AstrolojiApp.Entity.csproj",
+        "projectUniqueName": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.Entity\\AstrolojiApp.Entity.csproj",
         "projectName": "AstrolojiApp.Entity",
-        "projectPath": "D:\\GitHubb\\AstrolojiApp\\AstrolojiApp.Entity\\AstrolojiApp.Entity.csproj",
-        "packagesPath": "C:\\Users\\samet\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHubb\\AstrolojiApp\\AstrolojiApp.Entity\\obj\\",
+        "projectPath": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.Entity\\AstrolojiApp.Entity.csproj",
+        "packagesPath": "C:\\Users\\brk_y\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.Entity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\samet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\brk_y\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -176,15 +176,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\GitHubb\\AstrolojiApp\\AstrolojiApp.Shared\\AstrolojiApp.Shared.csproj": {
-                "projectPath": "D:\\GitHubb\\AstrolojiApp\\AstrolojiApp.Shared\\AstrolojiApp.Shared.csproj"
+              "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.Shared\\AstrolojiApp.Shared.csproj": {
+                "projectPath": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.Shared\\AstrolojiApp.Shared.csproj"
               }
             }
           }
@@ -198,7 +197,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -219,24 +219,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\GitHubb\\AstrolojiApp\\AstrolojiApp.Shared\\AstrolojiApp.Shared.csproj": {
+    "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.Shared\\AstrolojiApp.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHubb\\AstrolojiApp\\AstrolojiApp.Shared\\AstrolojiApp.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.Shared\\AstrolojiApp.Shared.csproj",
         "projectName": "AstrolojiApp.Shared",
-        "projectPath": "D:\\GitHubb\\AstrolojiApp\\AstrolojiApp.Shared\\AstrolojiApp.Shared.csproj",
-        "packagesPath": "C:\\Users\\samet\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHubb\\AstrolojiApp\\AstrolojiApp.Shared\\obj\\",
+        "projectPath": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.Shared\\AstrolojiApp.Shared.csproj",
+        "packagesPath": "C:\\Users\\brk_y\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\samet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\brk_y\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -245,7 +245,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -263,7 +262,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -284,7 +284,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
