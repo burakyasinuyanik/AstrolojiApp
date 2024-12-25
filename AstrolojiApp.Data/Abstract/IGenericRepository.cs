@@ -2,7 +2,7 @@ using System;
 
 namespace AstrolojiApp.Data.Abstract;
 
-public interface IGenericRepository<T> where T : class
+public interface IGenericRepository<T> 
 {
     Task<IEnumerable<T>> GetAllAsync();//T�m kay�tlar� getirir
     Task<T?> GetAsync(int id);//id id'li kayd� getir
