@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AstrolojiApp.UI", "AstrolojiApp\AstrolojiApp.UI.csproj", "{D9F16CAC-FD1B-4DBC-AC29-14755206CFFF}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AstrolojiApp.Business", "AstrolojiApp.Business\AstrolojiApp.Business.csproj", "{736FCC9B-92E0-4534-A59D-0F73909770DC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AstrolojiApp.Data", "AstrolojiApp.Data\AstrolojiApp.Data.csproj", "{04D04646-0526-42FC-827C-491669BFACDA}"
@@ -13,16 +11,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AstrolojiApp.Entity", "Astr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AstrolojiApp.Shared", "AstrolojiApp.Shared\AstrolojiApp.Shared.csproj", "{EC616190-8524-407E-99A3-6F664B97DB0B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AstrolojiApp.UI", "AstrolojiApp.UI\AstrolojiApp.UI.csproj", "{2E718951-651A-4256-ABEB-AE0CD989A514}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D9F16CAC-FD1B-4DBC-AC29-14755206CFFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D9F16CAC-FD1B-4DBC-AC29-14755206CFFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D9F16CAC-FD1B-4DBC-AC29-14755206CFFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D9F16CAC-FD1B-4DBC-AC29-14755206CFFF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{736FCC9B-92E0-4534-A59D-0F73909770DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{736FCC9B-92E0-4534-A59D-0F73909770DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{736FCC9B-92E0-4534-A59D-0F73909770DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -39,6 +35,10 @@ Global
 		{EC616190-8524-407E-99A3-6F664B97DB0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC616190-8524-407E-99A3-6F664B97DB0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC616190-8524-407E-99A3-6F664B97DB0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E718951-651A-4256-ABEB-AE0CD989A514}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E718951-651A-4256-ABEB-AE0CD989A514}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E718951-651A-4256-ABEB-AE0CD989A514}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E718951-651A-4256-ABEB-AE0CD989A514}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

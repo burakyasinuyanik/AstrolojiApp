@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SX5ye7nRnFo=",
+  "dgSpecHash": "Jczn2K6z+/w=",
   "success": true,
-  "projectFilePath": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp\\AstrolojiApp.UI.csproj",
+  "projectFilePath": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.UI\\AstrolojiApp.UI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\brk_y\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\brk_y\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
