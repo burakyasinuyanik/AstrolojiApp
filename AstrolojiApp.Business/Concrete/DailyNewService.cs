@@ -1,6 +1,7 @@
 using System;
 using AstrolojiApp.Business.Abstract;
 using AstrolojiApp.Data.Abstract;
+using AstrolojiApp.Entity.Concrete;
 using AstrolojiApp.Shared.Dtos;
 
 namespace AstrolojiApp.Business.Concrete;
@@ -14,28 +15,89 @@ public class DailyNewService : IDailyNewService
         _dailyNewRepository = dailyNewRepository;
     }
 
-    public Task<DailyNewDto> CreateAsync(DailyNewCreateDto dailyNewCreateDto)
+    public async Task<DailyNewDto> CreateAsync(DailyNewCreateDto dailyNewCreateDto)
     {
-        throw new NotImplementedException();
+        var dailynew = new DailyNew
+        {
+            Text = dailyNewCreateDto.Text,
+            Title = dailyNewCreateDto.Title
+        };
+        await _dailyNewRepository.AddAsync(dailynew);
+
+        var dailyNewDto = new DailyNewDto
+        {
+            Id = dailynew.Id,
+            Text = dailynew.Text,
+            Title = dailynew.Title
+        };
+        return dailyNewDto;
+
     }
 
-    public Task DeleteAsync(int id)
+    public async Task DeleteAsync(int id)
     {
-        throw new NotImplementedException();
+        var dailynew = await _dailyNewRepository.GetAsync(id);
+
+        if (dailynew != null)
+        {
+            await _dailyNewRepository.DeleteAsync(dailynew);
+        }
+
     }
 
-    public Task<DailyNewDto> GetByIdAsync(int id)
+    public async Task<DailyNewDto> GetByIdAsync(int id)
     {
-        throw new NotImplementedException();
+        var dailynew = await _dailyNewRepository.GetAsync(id);
+
+        var dailyNewDto = new DailyNewDto
+        {
+            Id = dailynew.Id,
+            Text = dailynew.Text,
+            Title = dailynew.Title
+        };
+        return dailyNewDto;
     }
 
-    public Task<IEnumerable<DailyNewDto>> GetDailyNewAsync()
+    public async Task<IEnumerable<DailyNewDto>> GetDailyNewAsync()
     {
-        throw new NotImplementedException();
+        IEnumerable<DailyNew> dailynew = await _dailyNewRepository.GetAllAsync();
+
+        if (dailynew == null)
+        {
+            return null;
+        }
+
+        var dailynewdto = dailynew
+                          .Select(x => new DailyNewDto
+                          {
+                              Id = x.Id,
+                              Text = x.Text,
+                              Title = x.Title
+                          }).ToList();
+        return dailynewdto;
     }
 
-    public Task<DailyNewDto> UpdateAsync(DailyNewUpdateDto dailyNewUpdateDto)
+    public async Task<DailyNewDto> UpdateAsync(DailyNewUpdateDto dailyNewUpdateDto)
     {
-        throw new NotImplementedException();
+        var dailynew = new DailyNew
+        {
+            Id = dailyNewUpdateDto.Id,
+            Text = dailyNewUpdateDto.Text,
+            Title = dailyNewUpdateDto.Title
+        };
+        await _dailyNewRepository.GetAsync(dailynew.Id);
+        if (dailynew.Id == null)
+        {
+            return null;
+        }
+        await _dailyNewRepository.UpdateAsync(dailynew);
+
+        var dailynewdto = new DailyNewDto
+        {
+            Id = dailynew.Id,
+            Text = dailynew.Text,
+            Title = dailynew.Title
+        };
+        return dailynewdto;
     }
 }
