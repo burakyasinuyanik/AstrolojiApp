@@ -37,6 +37,7 @@ public class AppSettingService : IAppSettingService
 
         var appSettingDto = new AppSettingDto
         {
+            Id = appSetting.Id,
             WorkingHours = appSetting.WorkingHours,
             BrandName = appSetting.BrandName,
             ImageUrl = appSetting.ImageUrl,
