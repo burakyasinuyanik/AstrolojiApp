@@ -1,41 +1,103 @@
 using System;
 using AstrolojiApp.Business.Abstract;
 using AstrolojiApp.Data.Abstract;
+using AstrolojiApp.Entity.Concrete;
 using AstrolojiApp.Shared.Dtos;
 
 namespace AstrolojiApp.Business.Concrete;
 
-public class HoroscopeService : IHoroscopeGroupService
+public class HoroscopeService : IHoroscopeService
 {
-    private readonly IHoroscopeRepository _horoscopeRepository;
+private readonly IHoroscopeRepository _horoscopeRepository;
 
     public HoroscopeService(IHoroscopeRepository horoscopeRepository)
     {
         _horoscopeRepository = horoscopeRepository;
     }
 
-    public Task<HoroscopeGroupDto> CreateAsync(HoroscopeGroupCreateDto horoscopeGroupCreateDto)
+    public async Task<HoroscopeDto> CreateAsync(HoroscopeCreateDto horoscopeCreateDto)
     {
-        throw new NotImplementedException();
+        var horoscope = new Horoscope
+        {
+            Name = horoscopeCreateDto.Name,
+            Image = horoscopeCreateDto.Image,
+            DateRange = horoscopeCreateDto.DateRange
+        };
+        await _horoscopeRepository.AddAsync(horoscope);
+
+        var horoscopeDto = new HoroscopeDto
+        {
+            Id = horoscope.Id,
+            Name = horoscope.Name,
+            Image = horoscope.Image,
+            DateRange = horoscope.DateRange
+        };
+        return horoscopeDto;
+    }   
+
+    public async Task DeleteAsync(int id)
+    {
+        var horoscope = await _horoscopeRepository.GetAsync(id);
+
+        if (horoscope != null)
+        {
+            await _horoscopeRepository.DeleteAsync(horoscope);
+        }
     }
 
-    public Task DeleteAsync(int id)
+    public async Task<HoroscopeDto> GetByIdAsync(int id)
     {
-        throw new NotImplementedException();
+        var horoscope = await _horoscopeRepository.GetAsync(id);
+
+        var horoscopeDto = new HoroscopeDto
+        {
+            Id = horoscope.Id,
+            Name = horoscope.Name,
+            Image = horoscope.Image,
+            DateRange = horoscope.DateRange
+        };
+        return horoscopeDto;
     }
 
-    public Task<HoroscopeGroupDto> GetByIdAsync(int id)
+    public async Task<IEnumerable<HoroscopeDto>> GetHoroscopeAsync()
     {
-        throw new NotImplementedException();
+        IEnumerable<Horoscope> horoscope = await _horoscopeRepository.GetAllAsync();
+        if (horoscope == null)
+        {
+            return null;
+        }
+        var horoscopeDto = horoscope.Select(x => new HoroscopeDto
+        {
+            Id = x.Id,
+            Name = x.Name,
+            Image = x.Image,
+            DateRange = x.DateRange
+        });
+        return horoscopeDto;
     }
 
-    public Task<IEnumerable<HoroscopeGroupDto>> GetHoroscopeGroupAsync()
+    public async Task<HoroscopeDto> UpdateAsync(HoroscopeUpdateDto horoscopeUpdateDto)
     {
-        throw new NotImplementedException();
-    }
-
-    public Task<HoroscopeGroupDto> UpdateAsync(HoroscopeGroupUpdateDto horoscopeGroupUpdateDto)
-    {
-        throw new NotImplementedException();
+     var horoscope = new Horoscope
+     {
+         Id = horoscopeUpdateDto.Id,
+         Name = horoscopeUpdateDto.Name,
+         Image = horoscopeUpdateDto.Image,
+         DateRange = horoscopeUpdateDto.DateRange
+     };
+     await _horoscopeRepository.GetAsync(horoscope.Id);
+     if (horoscope.Id==null)
+     {
+        return null;
+     }   
+     await _horoscopeRepository.UpdateAsync(horoscope);
+     var horoscopeDto = new HoroscopeDto
+     {
+         Id = horoscope.Id,
+         Name = horoscope.Name,
+         Image = horoscope.Image,
+         DateRange = horoscope.DateRange
+     };
+     return horoscopeDto;
     }
 }

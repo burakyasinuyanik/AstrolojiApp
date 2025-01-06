@@ -1,6 +1,7 @@
 using System;
 using AstrolojiApp.Business.Abstract;
 using AstrolojiApp.Data.Abstract;
+using AstrolojiApp.Entity.Concrete;
 using AstrolojiApp.Shared.Dtos;
 
 namespace AstrolojiApp.Business.Concrete;
@@ -14,28 +15,90 @@ public class SocialMediaService : ISocialMediaService
         _socialMediaRepository = socialMediaRepository;
     }
 
-    public Task<SocialMediaDto> CreateAsync(SocialMediaCreateDto socialMediaCreateDto)
+    public async Task<SocialMediaDto> CreateAsync(SocialMediaCreateDto socialMediaCreateDto)
     {
-        throw new NotImplementedException();
+        var socialmedia = new SocialMedia
+        {
+            Name = socialMediaCreateDto.Name,
+            Url = socialMediaCreateDto.Url,
+            Icon = socialMediaCreateDto.Icon
+        };
+        await _socialMediaRepository.AddAsync(socialmedia);
+
+        var socialMediaDto = new SocialMediaDto
+        {
+            Id = socialmedia.Id,
+            Name = socialmedia.Name,
+            Url = socialmedia.Url,
+            Icon = socialmedia.Icon
+        };
+        return socialMediaDto;
     }
 
-    public Task DeleteAsync(int id)
+    public async Task DeleteAsync(int id)
     {
-        throw new NotImplementedException();
+        var socialmedia = await _socialMediaRepository.GetAsync(id);
+        if (socialmedia != null)
+        {
+            await _socialMediaRepository.DeleteAsync(socialmedia);
+        }
     }
 
-    public Task<SocialMediaDto> GetByIdAsync(int id)
+    public async Task<SocialMediaDto> GetByIdAsync(int id)
     {
-        throw new NotImplementedException();
+        var socialmedia = await _socialMediaRepository.GetAsync(id);
+
+        var socialMediaDto = new SocialMediaDto
+        {
+            Id = socialmedia.Id,
+            Name = socialmedia.Name,
+            Url = socialmedia.Url,
+            Icon = socialmedia.Icon
+        };
+        return socialMediaDto;
     }
 
-    public Task<IEnumerable<SocialMediaDto>> GetSocialMediaAsync()
+    public async Task<IEnumerable<SocialMediaDto>> GetSocialMediaAsync()
     {
-        throw new NotImplementedException();
+        IEnumerable<SocialMedia> socialmedia = await _socialMediaRepository.GetAllAsync();
+        if (socialmedia == null)
+        {
+            return null;
+        }
+        var socialMediaDtos = socialmedia.Select(socialmedia => new SocialMediaDto
+        {
+            Id = socialmedia.Id,
+            Name = socialmedia.Name,
+            Url = socialmedia.Url,
+            Icon = socialmedia.Icon
+        }).ToList();
+        return socialMediaDtos;
+
     }
 
-    public Task<SocialMediaDto> UpdateAsync(SocialMediaUpdateDto socialMediaUpdateDto)
+    public async Task<SocialMediaDto> UpdateAsync(SocialMediaUpdateDto socialMediaUpdateDto)
     {
-        throw new NotImplementedException();
+        var socialmedia = new SocialMedia
+        {
+            Id = socialMediaUpdateDto.Id,
+            Name = socialMediaUpdateDto.Name,
+            Url = socialMediaUpdateDto.Url,
+            Icon = socialMediaUpdateDto.Icon
+        };
+        await _socialMediaRepository.GetAsync(socialmedia.Id);
+        if (socialmedia.Id == null)
+        {
+            return null;
+        }
+        await _socialMediaRepository.UpdateAsync(socialmedia);
+
+        var socialMediaDto = new SocialMediaDto
+        {
+            Id = socialmedia.Id,
+            Name = socialmedia.Name,
+            Url = socialmedia.Url,
+            Icon = socialmedia.Icon
+        };
+        return socialMediaDto;
     }
 }
