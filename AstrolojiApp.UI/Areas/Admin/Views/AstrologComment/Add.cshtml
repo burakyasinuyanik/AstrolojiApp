@@ -1,4 +1,4 @@
-@model AstrologComment
+@model AstrologCommentCreateDto
 
 <form asp-area="Admin" asp-controller="AstrologComment" asp-action="Add" method="post" enctype="multipart/form-data">
     <h6 class="display-6 fs-3 text-primary mb-4">Astrolog Comment Ekleme</h6>
@@ -14,6 +14,7 @@
         <span asp-validation-for="Image" class="text-danger"></span>
     </div>
 
+  
     <div class="mb-3">
         <label asp-for="Text" class="form-label"></label>
         <textarea asp-for="Text" class="form-control" placeholder="Açıklama giriniz"></textarea>

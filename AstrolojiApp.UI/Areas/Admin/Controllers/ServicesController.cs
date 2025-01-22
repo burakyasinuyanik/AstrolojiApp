@@ -1,8 +1,9 @@
 using System.Data.SqlClient;
-using Dapper;
+using AstrolojiApp.Business.Abstract;
+using AstrolojiApp.Shared.Dtos;
 using Microsoft.AspNetCore.Mvc;
-using AstrolojiApp.Models;
-using AstrolojiApp.Areas.Admin.Data;
+
+
 
 namespace AstrolojiApp.Areas.Admin.Controllers
 {
@@ -10,60 +11,63 @@ namespace AstrolojiApp.Areas.Admin.Controllers
     public class ServicesController : Controller
     {
         // GET: ServicesController
-        private readonly IRepository<Service> _services;
+        private readonly IServiceService _serviceService;
 
-        public ServicesController(IRepository<Service> services)
+        public ServicesController(IServiceService serviceService)
         {
-            _services = services;
+            _serviceService = serviceService;
         }
 
         public async Task<ActionResult> Index()
         {
-            //var connectionString = "Server=localhost,1441;Database=AstrologyDb;User=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=true";
-            //var connection = new SqlConnection(connectionString);
-
-            //var queryService = "select * from Services";
-            //var services = await connection.QueryAsync<Service>(queryService);
-            var services=await _services.GetAllAsync();
+           
+            var services=await _serviceService.GetServiceAsync();
             
             return View(services);
         }
         [HttpGet]
         public async Task<IActionResult> Update(int id)
         {
-            var service = await _services.GetAsync(id);
+            var service = await _serviceService.GetByIdAsync(id);
 
             return View(service);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Update(Service entity)
+        public async Task<IActionResult> Update(ServiceUpdateDto  serviceUpdateDto)
         {
-            var service = await _services.UpdateAsync(entity);
+            if (ModelState.IsValid)
+            {
+                var service = await _serviceService.UpdateAsync(serviceUpdateDto);
 
-            return RedirectToAction("Index","Services");
+                return RedirectToAction("Index", "Service");
+            }
+            return View(serviceUpdateDto);
+            
         }
 
         [HttpGet]
         public async Task<IActionResult> Add()
         {
-            
-
             return View();
         }
 
         [HttpPost]
-        public async Task<IActionResult> Add(Service entity)
+        public async Task<IActionResult> Add(ServiceCreateDto  serviceCreateDto)
         {
-            var service = await _services.AddAsync(entity);
+            if (ModelState.IsValid)
+            {
+                var service = await _serviceService.CreateAsync(serviceCreateDto);
 
-            return RedirectToAction("Index", "Services");
+                return RedirectToAction("Index", "Service");
+            }
+            return View(serviceCreateDto);
         }
 
         [HttpGet]
         public async Task<IActionResult> Delete(int id)
         {
-          var result=  await _services.DeleteAsync(id);
+           await _serviceService.DeleteAsync(id);
 
             return RedirectToAction("Index", "Services");
         }

@@ -1,4 +1,4 @@
-@model IEnumerable<Contact>
+@model IEnumerable<ContactDto>
 @{
     ViewData["Title"] = "Index";
 }
@@ -14,6 +14,7 @@
                 <th scope="col">Contact Icon</th>
                 <th scope="col">Action</th>
             </tr>
+    
         </thead>
         <tbody>
             @foreach (var contact in Model)

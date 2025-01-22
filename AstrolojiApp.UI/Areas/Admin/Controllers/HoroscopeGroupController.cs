@@ -1,7 +1,6 @@
 using System.Data.SqlClient;
-using AstrolojiApp.Areas.Admin.Data;
-using AstrolojiApp.Models;
-using Dapper;
+using AstrolojiApp.Business.Abstract;
+using AstrolojiApp.Shared.Dtos;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AstrolojiApp.Areas.Admin.Controllers
@@ -11,24 +10,50 @@ namespace AstrolojiApp.Areas.Admin.Controllers
     {
         // GET: HoroscopeGroupController
 
-        private readonly IRepository<HoroscopeGroup> _horoscopeGroup;
+       private readonly IHoroscopeGroupService _horoscopeGroupService;
 
-        public HoroscopeGroupController(IRepository<HoroscopeGroup> repository)
+        public HoroscopeGroupController(IHoroscopeGroupService horoscopeGroupService)
         {
-            _horoscopeGroup = repository;
+            _horoscopeGroupService = horoscopeGroupService;
         }
 
         public async Task<ActionResult> Index()
         {
-            //var connectionString = "Server=localhost,1441;Database=AstrologyDb;User=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=true";
-            //var connection = new SqlConnection(connectionString);
+           
+            var horoscopeGroups=await _horoscopeGroupService.GetHoroscopeGroupAsync();
 
-            //var queryHoroscopeGroup = "select * from HoroscopeGroups";
-            //var horoscopeGroups = await connection.QueryAsync<Horoscope>(queryHoroscopeGroup);
-            var horoscopeGroups=await _horoscopeGroup.GetAllAsync();
             return View(horoscopeGroups);
-        
         }
+
+        [HttpGet]
+        public async Task<IActionResult> Update(int id)
+        {
+            var horoscopeGroup = await _horoscopeGroupService.GetByIdAsync(id);
+
+            return View(horoscopeGroup);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Update(HoroscopeGroupUpdateDto horoscopeGroupUpdateDto)
+        {
+            if (ModelState.IsValid)
+            {
+                var horoscopeGroup= await _horoscopeGroupService.UpdateAsync(horoscopeGroupUpdateDto);
+
+                return RedirectToAction("Index", "HoroscopeGroup");
+            }
+            return View(horoscopeGroupUpdateDto);
+
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Delete(int id)
+        {
+            await _horoscopeGroupService.DeleteAsync(id);
+
+            return RedirectToAction("Index", "HoroscopeGroup");
+        }
+
 
     }
 }

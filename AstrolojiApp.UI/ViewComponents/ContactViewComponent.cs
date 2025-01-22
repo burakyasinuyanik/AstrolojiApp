@@ -1,5 +1,5 @@
 using System;
-using AstrolojiApp.Areas.Admin.Data;
+using AstrolojiApp.Data.Abstract;
 using AstrolojiApp.Entity.Concrete;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,9 +8,9 @@ namespace AstrolojiApp.ViewComponents;
 public class ContactViewComponent :ViewComponent
 {
 
-    private readonly IRepository<Contact> _repositoryContactRepository;
+    private readonly IGenericRepository<Contact> _repositoryContactRepository;
 
-    public ContactViewComponent(IRepository<Contact> repositoryContactRepository)
+    public ContactViewComponent(IGenericRepository<Contact> repositoryContactRepository)
     {
         _repositoryContactRepository = repositoryContactRepository;
     }
