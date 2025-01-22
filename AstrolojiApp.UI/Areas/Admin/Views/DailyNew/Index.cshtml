@@ -1,4 +1,4 @@
-@model IEnumerable<DailyNew>
+@model IEnumerable<DailyNewDto>
 @{
     ViewData["Title"] = "Index";
 }
@@ -14,6 +14,7 @@
                 @daily.Text
             </p>
             <div class="">
+    
                 <a asp-action="Update" asp-route-id="@daily.Id" class="btn btn-primary btn-sm">Düzenle</a>
                 <a asp-action="Delete" asp-route-id="@daily.Id" class="btn btn-danger btn-sm">Sil</a>
             </div>

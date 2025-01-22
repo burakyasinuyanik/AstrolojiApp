@@ -1,9 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Data.SqlClient;
-using Dapper;
-using AstrolojiApp.Models;
-using AstrolojiApp.Areas.Admin.Data;
 using System.Security.Permissions;
+using AstrolojiApp.Business.Abstract;
+using AstrolojiApp.Shared.Dtos;
 
 namespace AstrolojiApp.Areas.Admin.Controllers
 {
@@ -11,34 +10,39 @@ namespace AstrolojiApp.Areas.Admin.Controllers
    public class SocialController : Controller
    {
 
-      private readonly IRepository<SocialMedia> _social;
+     private readonly ISocialMediaService _socialMediaService;
 
-      public SocialController(IRepository<SocialMedia> social)
-      {
-         _social = social;
-      }
-      // GET: SocialController
-      public async Task<ActionResult> Index()
+        public SocialController(ISocialMediaService socialMediaService)
+        {
+            _socialMediaService = socialMediaService;
+        }
+
+        // GET: SocialController
+        public async Task<ActionResult> Index()
       {
 
-         var social = await _social.GetAllAsync();
+         var social = await _socialMediaService.GetSocialMediaAsync();
          return View(social);
       }
 
       [HttpGet]
       public async Task<IActionResult> Update(int id)
       {
-         var social = await _social.GetAsync(id);
+         var social = await _socialMediaService.GetByIdAsync(id);
          return View(social);
       }
 
 
       [HttpPost]
-      public async Task<IActionResult> Update(SocialMedia entity)
+      public async Task<IActionResult> Update(SocialMediaUpdateDto socialMediaUpdateDto)
       {
-         var social = await _social.UpdateAsync(entity);
+         if (ModelState.IsValid)
+         {
+            var social = await _socialMediaService.UpdateAsync(socialMediaUpdateDto);
 
-         return RedirectToAction("Index", "Social");
+            return RedirectToAction("Index", "Social");
+         }
+          return View(socialMediaUpdateDto);
       }
 
       [HttpGet]
@@ -48,17 +52,22 @@ namespace AstrolojiApp.Areas.Admin.Controllers
       }
 
       [HttpPost]
-      public async Task<IActionResult> Add(SocialMedia entity)
+      public async Task<IActionResult> Add(SocialMediaCreateDto  socialMediaCreateDto)
       {
-         var social = await _social.AddAsync(entity);
+         if (ModelState.IsValid)
+         {
+            var social = await _socialMediaService.CreateAsync(socialMediaCreateDto);
 
-         return RedirectToAction("Index", "Social");
+            return RedirectToAction("Index", "Social");
+         }
+         return View(socialMediaCreateDto);
+         
       }
 
       [HttpGet]
       public async Task<IActionResult> Delete(int id)
       {
-         var result = await _social.DeleteAsync(id);
+          await _socialMediaService.DeleteAsync(id);
 
          return RedirectToAction("Index", "Social");
       }

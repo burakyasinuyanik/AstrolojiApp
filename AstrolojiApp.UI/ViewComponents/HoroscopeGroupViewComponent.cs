@@ -1,5 +1,5 @@
 using System;
-using AstrolojiApp.Areas.Admin.Data;
+using AstrolojiApp.Data.Abstract;
 using AstrolojiApp.Entity.Concrete;
 using Microsoft.AspNetCore.Mvc;
 
@@ -7,13 +7,12 @@ namespace AstrolojiApp.ViewComponents;
 
 public class HoroscopeGroupViewComponent : ViewComponent
 {
-    private readonly IRepository<HoroscopeGroup> _repositoryHoroscopeGroupRepository;
+    private readonly IGenericRepository<HoroscopeGroup> _repositoryHoroscopeGroupRepository;
 
-    public HoroscopeGroupViewComponent(IRepository<HoroscopeGroup> repositoryHoroscopeGroupRepository)
+    public HoroscopeGroupViewComponent(IGenericRepository<HoroscopeGroup> repositoryHoroscopeGroupRepository)
     {
         _repositoryHoroscopeGroupRepository = repositoryHoroscopeGroupRepository;
     }
-
 
     public async Task<IViewComponentResult> InvokeAsync()
     {

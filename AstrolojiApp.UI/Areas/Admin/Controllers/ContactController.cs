@@ -1,42 +1,46 @@
-using AstrolojiApp.Areas.Admin.Data;
-using AstrolojiApp.Models;
+
 using Microsoft.AspNetCore.Mvc;
 using System.Data.SqlClient;
-using Dapper;
+using AstrolojiApp.Business.Abstract;
+using AstrolojiApp.Shared.Dtos;
 
 namespace AstrolojiApp.Areas.Admin.Controllers
 {
     [Area("Admin")]
     public class ContactController : Controller
     {
-        private readonly IRepository<Contact> _contact;
+    private readonly IContactService  _contactService;
 
-        public ContactController(IRepository<Contact> contact)
+        public ContactController(IContactService contactService)
         {
-            _contact = contact;
+            _contactService = contactService;
         }
 
         // GET: ContactController
         public async Task<ActionResult> Index()
         {
-            var contact = await _contact.GetAllAsync();
+            var contact = await _contactService.GetContacAsync();
             return View(contact);
         }
 
         [HttpGet]
         public async Task<IActionResult> Update(int id)
         {
-            var contact = await _contact.GetAsync(id);
+            var contact = await _contactService.GetByIdAsync(id);
 
             return View(contact);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Update(Contact entity)
+        public async Task<IActionResult> Update(ContactUpdateDto  contactUpdateDto)
         {
-            var contact = await _contact.UpdateAsync(entity);
-
-            return RedirectToAction("Index","Contact");
+            if (ModelState.IsValid)
+            {
+                var contact = await _contactService.UpdateAsync(contactUpdateDto);
+                
+            return RedirectToAction("Index", "Contact");
+            }
+             return View(contactUpdateDto);
         }
 
         [HttpGet]
@@ -47,17 +51,22 @@ namespace AstrolojiApp.Areas.Admin.Controllers
 
         [HttpPost]
 
-        public async Task<IActionResult> Add(Contact entity)
-        {
-            var contact = await _contact.AddAsync(entity);
+        public async Task<IActionResult> Add(ContactCreateDto  contactCreateDto)
+        {   
+            if (ModelState.IsValid)
+            {
+                var contact = await _contactService.CreateAsync(contactCreateDto);
 
-            return RedirectToAction("Index", "Contact");
+                return RedirectToAction("Index", "Contact");
+            }
+            return View(contactCreateDto);
+            
         }
 
         [HttpGet]
-        public async Task<IActionResult> Delete(int id)
+        public  async Task<IActionResult> Delete(int id)
         {
-            var result = await _contact.DeleteAsync(id);
+             await _contactService.DeleteAsync(id);
 
             return RedirectToAction("Index", "Contact");
         }
