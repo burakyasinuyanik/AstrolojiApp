@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{736FCC9B-92E0-4534-A59D-0F73909770DC}|AstrolojiApp.Business\\AstrolojiApp.Business.csproj|c:\\users\\brk_y\\source\\repos\\burakyasinuyanik\\astrolojiapp\\astrolojiapp.business\\concrete\\appsettingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{736FCC9B-92E0-4534-A59D-0F73909770DC}|AstrolojiApp.Business\\AstrolojiApp.Business.csproj|solutionrelative:astrolojiapp.business\\concrete\\appsettingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04D04646-0526-42FC-827C-491669BFACDA}|AstrolojiApp.Data\\AstrolojiApp.Data.csproj|c:\\users\\brk_y\\source\\repos\\burakyasinuyanik\\astrolojiapp\\astrolojiapp.data\\concrete\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04D04646-0526-42FC-827C-491669BFACDA}|AstrolojiApp.Data\\AstrolojiApp.Data.csproj|solutionrelative:astrolojiapp.data\\concrete\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2E718951-651A-4256-ABEB-AE0CD989A514}|AstrolojiApp.UI\\AstrolojiApp.UI.csproj|c:\\users\\brk_y\\source\\repos\\burakyasinuyanik\\astrolojiapp\\astrolojiapp.ui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{2E718951-651A-4256-ABEB-AE0CD989A514}|AstrolojiApp.UI\\AstrolojiApp.UI.csproj|solutionrelative:astrolojiapp.ui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -95,11 +103,37 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "AppSettingService.cs",
+              "DocumentMoniker": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.Business\\Concrete\\AppSettingService.cs",
+              "RelativeDocumentMoniker": "AstrolojiApp.Business\\Concrete\\AppSettingService.cs",
+              "ToolTip": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.Business\\Concrete\\AppSettingService.cs",
+              "RelativeToolTip": "AstrolojiApp.Business\\Concrete\\AppSettingService.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAADgv1cAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-25T23:12:01.312Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.Data\\Concrete\\Context\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "AstrolojiApp.Data\\Concrete\\Context\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.Data\\Concrete\\Context\\AppDbContext.cs",
+              "RelativeToolTip": "AstrolojiApp.Data\\Concrete\\Context\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-25T23:02:42.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.UI\\appsettings.json",
               "RelativeDocumentMoniker": "AstrolojiApp.UI\\appsettings.json",
-              "ToolTip": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.UI\\appsettings.json*",
-              "RelativeToolTip": "AstrolojiApp.UI\\appsettings.json*",
+              "ToolTip": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.UI\\appsettings.json",
+              "RelativeToolTip": "AstrolojiApp.UI\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-01-25T22:57:16.332Z",
@@ -107,7 +141,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.UI\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "AstrolojiApp.UI\\Views\\_ViewImports.cshtml",
@@ -120,7 +154,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "_PortfolioSectionPartial.cshtml",
               "DocumentMoniker": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.UI\\Views\\Shared\\_PortfolioSectionPartial.cshtml",
               "RelativeDocumentMoniker": "AstrolojiApp.UI\\Views\\Shared\\_PortfolioSectionPartial.cshtml",
@@ -133,7 +167,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Update.cshtml",
               "DocumentMoniker": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.UI\\Areas\\Admin\\Views\\HoroscopeGroup\\Update.cshtml",
               "RelativeDocumentMoniker": "AstrolojiApp.UI\\Areas\\Admin\\Views\\HoroscopeGroup\\Update.cshtml",
@@ -146,7 +180,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Default.cshtml",
               "DocumentMoniker": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.UI\\Views\\Shared\\Components\\AstrologComment\\Default.cshtml",
               "RelativeDocumentMoniker": "AstrolojiApp.UI\\Views\\Shared\\Components\\AstrologComment\\Default.cshtml",
@@ -159,7 +193,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.UI\\Areas\\Admin\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "AstrolojiApp.UI\\Areas\\Admin\\Views\\_ViewImports.cshtml",
@@ -172,7 +206,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Update.cshtml",
               "DocumentMoniker": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.UI\\Areas\\Admin\\Views\\HoroscopeComment\\Update.cshtml",
               "RelativeDocumentMoniker": "AstrolojiApp.UI\\Areas\\Admin\\Views\\HoroscopeComment\\Update.cshtml",
@@ -185,7 +219,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "AstrolojiApp.UI",
               "DocumentMoniker": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.UI\\AstrolojiApp.UI.csproj",
               "RelativeDocumentMoniker": "AstrolojiApp.UI\\AstrolojiApp.UI.csproj",
@@ -198,7 +232,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "AstrolojiApp.Business",
               "DocumentMoniker": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.Business\\AstrolojiApp.Business.csproj",
               "RelativeDocumentMoniker": "AstrolojiApp.Business\\AstrolojiApp.Business.csproj",
@@ -211,7 +245,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.UI\\Program.cs",
               "RelativeDocumentMoniker": "AstrolojiApp.UI\\Program.cs",
@@ -224,7 +258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.UI\\Areas\\Admin\\Views\\AstrologComment\\Index.cshtml",
               "RelativeDocumentMoniker": "AstrolojiApp.UI\\Areas\\Admin\\Views\\AstrologComment\\Index.cshtml",
@@ -237,7 +271,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.UI\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "AstrolojiApp.UI\\Views\\_ViewStart.cshtml",
@@ -250,7 +284,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Default.cshtml",
               "DocumentMoniker": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.UI\\Views\\Shared\\Components\\Service\\Default.cshtml",
               "RelativeDocumentMoniker": "AstrolojiApp.UI\\Views\\Shared\\Components\\Service\\Default.cshtml",
@@ -263,7 +297,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.UI\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "AstrolojiApp.UI\\Views\\Shared\\_Layout.cshtml",
@@ -276,7 +310,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "Update.cshtml",
               "DocumentMoniker": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.UI\\Areas\\Admin\\Views\\Horoscope\\Update.cshtml",
               "RelativeDocumentMoniker": "AstrolojiApp.UI\\Areas\\Admin\\Views\\Horoscope\\Update.cshtml",
@@ -289,7 +323,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "Update.cshtml",
               "DocumentMoniker": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.UI\\Areas\\Admin\\Views\\Social\\Update.cshtml",
               "RelativeDocumentMoniker": "AstrolojiApp.UI\\Areas\\Admin\\Views\\Social\\Update.cshtml",
@@ -302,7 +336,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "Add.cshtml",
               "DocumentMoniker": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.UI\\Areas\\Admin\\Views\\AstrologComment\\Add.cshtml",
               "RelativeDocumentMoniker": "AstrolojiApp.UI\\Areas\\Admin\\Views\\AstrologComment\\Add.cshtml",
@@ -315,7 +349,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "HoroscopeGroupUpdateDto.cs",
               "DocumentMoniker": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.Shared\\Dtos\\HoroscopeGroupUpdateDto.cs",
               "RelativeDocumentMoniker": "AstrolojiApp.Shared\\Dtos\\HoroscopeGroupUpdateDto.cs",
