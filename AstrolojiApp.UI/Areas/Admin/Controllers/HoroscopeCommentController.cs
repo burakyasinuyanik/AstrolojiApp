@@ -1,9 +1,7 @@
 using System.Data.SqlClient;
 using System.Security.Cryptography.X509Certificates;
-using AstrolojiApp.Areas.Admin.Data;
-using AstrolojiApp.Areas.Admin.Dto;
-using AstrolojiApp.Models;
-
+using AstrolojiApp.Business.Abstract;
+using AstrolojiApp.Shared.Dtos;
 using Microsoft.AspNetCore.Mvc;
 
 
@@ -12,50 +10,49 @@ namespace AstrolojiApp.Areas.Admin.Controllers
     [Area("Admin")]
     public class HoroscopeCommentController : Controller
     {
-        private readonly IRepository<HoroscopeComment> _horoscopecommentRepository;
-        private readonly IRepository<HoroscopeCommentDto> _horoscopeCommentUpdateRepository;
+        private readonly IHoroscopeCommentService _horoscopeCommnetService;
 
-        public HoroscopeCommentController(IRepository<HoroscopeComment> horoscopecommentRepository, IRepository<HoroscopeCommentDto> horoscopeCommentUpdateRepository)
+        public HoroscopeCommentController(IHoroscopeCommentService horoscopeCommnetService)
         {
-            _horoscopecommentRepository = horoscopecommentRepository;
-            _horoscopeCommentUpdateRepository = horoscopeCommentUpdateRepository;
+            _horoscopeCommnetService = horoscopeCommnetService;
         }
 
 
         // GET: HoroscopeCommentController
         public async Task<ActionResult> Index()
         {
-            var HoroscopeComments = await _horoscopecommentRepository.GetAllAsync();
+            var HoroscopeComments = await _horoscopeCommnetService.GetHoroscopeCommentAsync();
             return View(HoroscopeComments);
         }
 
         [HttpGet]
         public async Task<IActionResult> Update(int id)
         {
-            var horoscopeComment = await _horoscopecommentRepository.GetAsync(id);
+            var horoscopeComment = await _horoscopeCommnetService.GetByIdAsync(id);
 
             return View(horoscopeComment);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Update(HoroscopeCommentDto entity)
+        public async Task<IActionResult> Update(HoroscopeCommentUpdateDto  horoscopeCommentUpdateDto)
         {
-            var horoscopeComment = await _horoscopeCommentUpdateRepository.UpdateAsync(entity);
+            if (ModelState.IsValid)
+            {
+                var horoscopeComment = await _horoscopeCommnetService.UpdateAsync(horoscopeCommentUpdateDto);
 
-            return RedirectToAction("Index", "horoscopeComment");
+                return RedirectToAction("Index", "HoroscopeComment");
+            }
+              return View(horoscopeCommentUpdateDto);
+            
         }
 
         [HttpGet]
         public async Task<IActionResult> Delete(int id)
         {
-            var result = await _horoscopecommentRepository.DeleteAsync(id);
+             await _horoscopeCommnetService.DeleteAsync(id);
 
             return RedirectToAction("Index", "HoroscopeComment");
         }
-
-
-
-
 
     }
 }

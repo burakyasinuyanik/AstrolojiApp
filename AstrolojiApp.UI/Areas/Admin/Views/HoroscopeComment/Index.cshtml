@@ -1,4 +1,4 @@
-@model IEnumerable<HoroscopeComment>
+@model IEnumerable<HoroscopeCommentDto>
 
 @{
     ViewData["Title"] = "Index";
@@ -14,6 +14,7 @@
 
                     <!-- Pills Tabs -->
                     <ul class="nav nav-pills mb-3" id="pills-tab-@horoscopeComment.Id" role="tablist">
+
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active" id="pills-home-@horoscopeComment.Id-tab" data-bs-toggle="pill"
                                 data-bs-target="#pills-home-@horoscopeComment.Id" type="button" role="tab"

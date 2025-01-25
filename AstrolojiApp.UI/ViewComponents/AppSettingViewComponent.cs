@@ -1,24 +1,24 @@
 ﻿using System.Data;
-using AstrolojiApp.Areas.Admin.Data;
+using AstrolojiApp.Data.Abstract;
 using AstrolojiApp.Entity.Concrete;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AstrolojiApp.ViewComponents
 {
+    
     public class AppSettingViewComponent: ViewComponent
     {
 
-        private readonly IRepository<AppSetting> _repositoryAppsSettingRepository;
+        private readonly IGenericRepository<AppSetting> _appsetting;
 
-        public AppSettingViewComponent(IRepository<AppSetting> repositoryAppsSettingRepository)
+        public AppSettingViewComponent(IGenericRepository<AppSetting> appsetting)
         {
-            _repositoryAppsSettingRepository = repositoryAppsSettingRepository;
+            _appsetting = appsetting;
         }
-
 
         public async Task<IViewComponentResult> InvokeAsync()
         {
-           var appSetting= await _repositoryAppsSettingRepository.GetAllAsync();
+           var appSetting= await _appsetting.GetAllAsync();
 
             return View(appSetting.First());
         }

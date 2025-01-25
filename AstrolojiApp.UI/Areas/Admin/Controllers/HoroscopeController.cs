@@ -1,7 +1,6 @@
 using System.Data.SqlClient;
-using AstrolojiApp.Areas.Admin.Data;
-using AstrolojiApp.Models;
-using Dapper;
+using AstrolojiApp.Business.Abstract;
+using AstrolojiApp.Shared.Dtos;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AstrolojiApp.Areas.Admin.Controllers
@@ -9,23 +8,48 @@ namespace AstrolojiApp.Areas.Admin.Controllers
     [Area("Admin")]
     public class HoroscopeController : Controller
     {
-        private readonly IRepository<Horoscope> _horoscopeRepository;
+        private readonly IHoroscopeService _horoscopeService;
 
-        public HoroscopeController(IRepository<Horoscope> horoscopeRepository)
+        public HoroscopeController(IHoroscopeService horoscopeService)
         {
-            _horoscopeRepository = horoscopeRepository;
+            _horoscopeService = horoscopeService;
         }
 
         // GET: HoroscopeController
         public async Task<ActionResult> Index()
         {
-            //var connectionString = "Server=localhost,1441;Database=AstrologyDb;User=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=true";
-            //var connection = new SqlConnection(connectionString);
-
-            //var queryHoroscope = "select * from Horoscopes";
-            //var horoscopes = await connection.QueryAsync<Horoscope>(queryHoroscope);
-            var horoscopes=await _horoscopeRepository.GetAllAsync();
+        
+            var horoscopes=await _horoscopeService.GetHoroscopeAsync();
             return View(horoscopes);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Update(int id)
+        {
+            var horoscope = await _horoscopeService.GetByIdAsync(id);
+
+            return View(horoscope);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Update(HoroscopeUpdateDto horoscopeUpdateDto)
+        {
+            if (ModelState.IsValid)
+            {
+                var horoscope = await _horoscopeService.UpdateAsync(horoscopeUpdateDto);
+
+                return RedirectToAction("Index", "Horoscope");
+            }
+            return View(horoscopeUpdateDto);
+
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Delete(int id)
+        {
+            await _horoscopeService.DeleteAsync(id);
+
+            return RedirectToAction("Index", "Horoscope");
         }
 
     }

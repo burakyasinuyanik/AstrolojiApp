@@ -1,7 +1,6 @@
 using System.Data.SqlClient;
-using AstrolojiApp.Areas.Admin.Data;
-using AstrolojiApp.Models;
-using Dapper;
+using AstrolojiApp.Business.Abstract;
+using AstrolojiApp.Shared.Dtos;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AstrolojiApp.Areas.Admin.Controllers
@@ -9,37 +8,41 @@ namespace AstrolojiApp.Areas.Admin.Controllers
     [Area("Admin")]
     public class DailyNewController : Controller
     {
-        private readonly IRepository<DailyNew> _dailyNewRepository;
+        private readonly IDailyNewService _dailyNewService;
 
-        public DailyNewController(IRepository<DailyNew> dailyNewRepository)
+        public DailyNewController(IDailyNewService dailyNewService)
         {
-            _dailyNewRepository = dailyNewRepository;
+            _dailyNewService = dailyNewService;
         }
+
+
 
         // GET: DailyNewController
         public async Task<ActionResult> Index()
         {
-            //var connectionString = "Server=localhost,1441;Database=AstrologyDb;User=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=true";
-            //var connection = new SqlConnection(connectionString);
 
-            //var queryDailyNew = "select * from DailyNews";
-            //var dailyNews = await connection.QueryAsync<DailyNew>(queryDailyNew);
-            var dailyNews = await _dailyNewRepository.GetAllAsync();
+            var dailyNews = await _dailyNewService.GetDailyNewAsync();
             return View(dailyNews);
         }
         [HttpGet]
         public async Task<IActionResult> Update(int id)
         {
-            var dailynew = await _dailyNewRepository.GetAsync(id);
+            var dailynew = await _dailyNewService.GetByIdAsync(id);
             return View(dailynew);
         }
 
 
         [HttpPost]
-        public async Task<IActionResult> Update(DailyNew entity)
+        public async Task<IActionResult> Update(DailyNewUpdateDto dailyNewUpdateDto)
         {
-            var dailynew = await _dailyNewRepository.UpdateAsync(entity);
-            return RedirectToAction("Index", "DailyNew");
+            if (ModelState.IsValid)
+            {
+                var dailynew = await _dailyNewService.UpdateAsync(dailyNewUpdateDto);
+                return RedirectToAction("Index", "DailyNew");
+
+            }
+            return View(dailyNewUpdateDto);
+
         }
 
         [HttpGet]
@@ -49,16 +52,22 @@ namespace AstrolojiApp.Areas.Admin.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Add(DailyNew entity)
+        public async Task<IActionResult> Add(DailyNewCreateDto dailyNewCreateDto)
         {
-            var dailynew = await _dailyNewRepository.AddAsync(entity);
-            return RedirectToAction("Index", "DailyNew");
+            if (ModelState.IsValid)
+            {
+                var dailynew = await _dailyNewService.CreateAsync(dailyNewCreateDto);
+                return RedirectToAction("Index", "DailyNew");
+            }
+            return View(dailyNewCreateDto);
+
         }
 
         [HttpGet]
         public async Task<IActionResult> Delete(int id)
         {
-            var dailynew = await _dailyNewRepository.DeleteAsync(id);
+            await _dailyNewService.DeleteAsync(id);
+
             return RedirectToAction("Index", "DailyNew");
         }
 
