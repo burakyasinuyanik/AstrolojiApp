@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "AstrolojiApp.Entity/1.0.0": {
+        "dependencies": {
+          "AstrolojiApp.Shared": "1.0.0"
+        },
+        "runtime": {
+          "AstrolojiApp.Entity.dll": {}
+        }
+      },
+      "AstrolojiApp.Shared/1.0.0": {
+        "runtime": {
+          "AstrolojiApp.Shared.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AstrolojiApp.Entity/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AstrolojiApp.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
