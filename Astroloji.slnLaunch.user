@@ -1,0 +1,11 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "AstrolojiApp.UI\\AstrolojiApp.UI.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

@@ -19,6 +19,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AstrolojiApp.Business\AstrolojiApp.Business.csproj" />
+    <ProjectReference Include="..\AstrolojiApp.Data\AstrolojiApp.Data.csproj" />
+    <ProjectReference Include="..\AstrolojiApp.Entity\AstrolojiApp.Entity.csproj" />
     <ProjectReference Include="..\AstrolojiApp.Shared\AstrolojiApp.Shared.csproj" />
   </ItemGroup>
 
