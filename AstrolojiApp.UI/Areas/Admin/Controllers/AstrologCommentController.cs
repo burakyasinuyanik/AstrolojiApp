@@ -38,17 +38,17 @@ namespace AstrolojiApp.Areas.Admin.Controllers
             var astrologComment = await _astrologCommnetService.GetByIdAsync(id);
             var astrologUpdateDto = new AstrologCommentUpdateDto
             {
-                Id=astrologComment.Id,
-                 Name=astrologComment.Name,
-                  Image=astrologComment.Image,
-                    Text=astrologComment.Text
+                Id = astrologComment.Id,
+                Name = astrologComment.Name,
+                Image = astrologComment.Image,
+                Text = astrologComment.Text
             };
             return View(astrologUpdateDto);
         }
 
 
         [HttpPost]
-        public async Task<IActionResult> Update(AstrologCommentUpdateDto  astrologCommentUpdateDto)
+        public async Task<IActionResult> Update(AstrologCommentUpdateDto astrologCommentUpdateDto)
         {
 
 
@@ -76,14 +76,14 @@ namespace AstrolojiApp.Areas.Admin.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Add(AstrologCommentCreateDto  astrologCommentCreateDto)
-        { 
-            if(ModelState.IsValid)
-         {
-            var astrocomments = await _astrologCommnetService.CreateAsync(astrologCommentCreateDto);
+        public async Task<IActionResult> Add(AstrologCommentCreateDto astrologCommentCreateDto)
+        {
+            if (ModelState.IsValid)
+            {
+                var astrocomments = await _astrologCommnetService.CreateAsync(astrologCommentCreateDto);
 
-            return RedirectToAction("Index", "AstrologComment");
-         }
+                return RedirectToAction("Index", "AstrologComment");
+            }
             return View(astrologCommentCreateDto);
 
         }

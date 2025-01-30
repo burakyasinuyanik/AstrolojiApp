@@ -10,3 +10,15 @@ C:\Users\brk_y\source\repos\burakyasinuyanik\AstrolojiApp\AstrolojiApp.Shared\ob
 C:\Users\brk_y\source\repos\burakyasinuyanik\AstrolojiApp\AstrolojiApp.Shared\obj\Debug\net8.0\refint\AstrolojiApp.Shared.dll
 C:\Users\brk_y\source\repos\burakyasinuyanik\AstrolojiApp\AstrolojiApp.Shared\obj\Debug\net8.0\AstrolojiApp.Shared.pdb
 C:\Users\brk_y\source\repos\burakyasinuyanik\AstrolojiApp\AstrolojiApp.Shared\obj\Debug\net8.0\ref\AstrolojiApp.Shared.dll
+D:\GitHubb\AstrolojiApp\AstrolojiApp.Shared\bin\Debug\net8.0\AstrolojiApp.Shared.deps.json
+D:\GitHubb\AstrolojiApp\AstrolojiApp.Shared\bin\Debug\net8.0\AstrolojiApp.Shared.dll
+D:\GitHubb\AstrolojiApp\AstrolojiApp.Shared\bin\Debug\net8.0\AstrolojiApp.Shared.pdb
+D:\GitHubb\AstrolojiApp\AstrolojiApp.Shared\obj\Debug\net8.0\AstrolojiApp.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHubb\AstrolojiApp\AstrolojiApp.Shared\obj\Debug\net8.0\AstrolojiApp.Shared.AssemblyInfoInputs.cache
+D:\GitHubb\AstrolojiApp\AstrolojiApp.Shared\obj\Debug\net8.0\AstrolojiApp.Shared.AssemblyInfo.cs
+D:\GitHubb\AstrolojiApp\AstrolojiApp.Shared\obj\Debug\net8.0\AstrolojiApp.Shared.csproj.CoreCompileInputs.cache
+D:\GitHubb\AstrolojiApp\AstrolojiApp.Shared\obj\Debug\net8.0\AstrolojiApp.Shared.sourcelink.json
+D:\GitHubb\AstrolojiApp\AstrolojiApp.Shared\obj\Debug\net8.0\AstrolojiApp.Shared.dll
+D:\GitHubb\AstrolojiApp\AstrolojiApp.Shared\obj\Debug\net8.0\refint\AstrolojiApp.Shared.dll
+D:\GitHubb\AstrolojiApp\AstrolojiApp.Shared\obj\Debug\net8.0\AstrolojiApp.Shared.pdb
+D:\GitHubb\AstrolojiApp\AstrolojiApp.Shared\obj\Debug\net8.0\ref\AstrolojiApp.Shared.dll
