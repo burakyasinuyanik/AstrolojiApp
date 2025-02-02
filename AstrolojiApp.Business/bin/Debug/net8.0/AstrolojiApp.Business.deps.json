@@ -575,7 +575,10 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.11"
         },
         "runtime": {
-          "AstrolojiApp.Data.dll": {}
+          "AstrolojiApp.Data.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "AstrolojiApp.Entity/1.0.0": {
@@ -583,12 +586,18 @@
           "AstrolojiApp.Shared": "1.0.0"
         },
         "runtime": {
-          "AstrolojiApp.Entity.dll": {}
+          "AstrolojiApp.Entity.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "AstrolojiApp.Shared/1.0.0": {
         "runtime": {
-          "AstrolojiApp.Shared.dll": {}
+          "AstrolojiApp.Shared.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
