@@ -388,3 +388,5 @@ AstrolojiApp.UI/obj/Debug/net8.0/AstrolojiApp.UI.GeneratedMSBuildEditorConfig.ed
 AstrolojiApp.UI/obj/Debug/net8.0/staticwebassets.removed.txt
 AstrolojiApp.Business/bin/Debug/net8.0/AstrolojiApp.Business.pdb
 AstrolojiApp.Business/bin/Debug/net8.0/AstrolojiApp.Data.pdb
+/AstrolojiApp.UI/appsettings.json
+AstrolojiApp.Entity/obj/Debug/net8.0/AstrolojiApp.Entity.AssemblyInfoInputs.cache
