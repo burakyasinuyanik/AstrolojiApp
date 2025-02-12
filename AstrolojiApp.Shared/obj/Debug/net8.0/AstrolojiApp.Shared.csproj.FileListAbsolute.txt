@@ -22,3 +22,15 @@ D:\GitHubb\AstrolojiApp\AstrolojiApp.Shared\obj\Debug\net8.0\AstrolojiApp.Shared
 D:\GitHubb\AstrolojiApp\AstrolojiApp.Shared\obj\Debug\net8.0\refint\AstrolojiApp.Shared.dll
 D:\GitHubb\AstrolojiApp\AstrolojiApp.Shared\obj\Debug\net8.0\AstrolojiApp.Shared.pdb
 D:\GitHubb\AstrolojiApp\AstrolojiApp.Shared\obj\Debug\net8.0\ref\AstrolojiApp.Shared.dll
+C:\Users\Hp\Documents\GitHub\AstrolojiApp\AstrolojiApp.Shared\bin\Debug\net8.0\AstrolojiApp.Shared.deps.json
+C:\Users\Hp\Documents\GitHub\AstrolojiApp\AstrolojiApp.Shared\bin\Debug\net8.0\AstrolojiApp.Shared.dll
+C:\Users\Hp\Documents\GitHub\AstrolojiApp\AstrolojiApp.Shared\bin\Debug\net8.0\AstrolojiApp.Shared.pdb
+C:\Users\Hp\Documents\GitHub\AstrolojiApp\AstrolojiApp.Shared\obj\Debug\net8.0\AstrolojiApp.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hp\Documents\GitHub\AstrolojiApp\AstrolojiApp.Shared\obj\Debug\net8.0\AstrolojiApp.Shared.AssemblyInfoInputs.cache
+C:\Users\Hp\Documents\GitHub\AstrolojiApp\AstrolojiApp.Shared\obj\Debug\net8.0\AstrolojiApp.Shared.AssemblyInfo.cs
+C:\Users\Hp\Documents\GitHub\AstrolojiApp\AstrolojiApp.Shared\obj\Debug\net8.0\AstrolojiApp.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Hp\Documents\GitHub\AstrolojiApp\AstrolojiApp.Shared\obj\Debug\net8.0\AstrolojiApp.Shared.sourcelink.json
+C:\Users\Hp\Documents\GitHub\AstrolojiApp\AstrolojiApp.Shared\obj\Debug\net8.0\AstrolojiApp.Shared.dll
+C:\Users\Hp\Documents\GitHub\AstrolojiApp\AstrolojiApp.Shared\obj\Debug\net8.0\refint\AstrolojiApp.Shared.dll
+C:\Users\Hp\Documents\GitHub\AstrolojiApp\AstrolojiApp.Shared\obj\Debug\net8.0\AstrolojiApp.Shared.pdb
+C:\Users\Hp\Documents\GitHub\AstrolojiApp\AstrolojiApp.Shared\obj\Debug\net8.0\ref\AstrolojiApp.Shared.dll
