@@ -1,0 +1,39 @@
+@model IEnumerable<HoroscopeGroup>
+@{
+    ViewData["Title"] = "Index";
+}
+<h1>Horoscope Group</h1>
+
+@foreach (var horosgroup in Model)
+{
+    <div class="card mb-3">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="@horosgroup.Image" class="img-fluid card-img" alt="@horosgroup.Name">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">@horosgroup.Name</h5>
+                    <p class="card-text">@horosgroup.HoroscopeNames</p>
+                    <div class="d-flex justify-content-between mt-3">
+                        <a href="/Edit/@horosgroup.Id" class="btn btn-primary btn-sm">Düzenle</a>
+                        <a href="/Delete/@horosgroup.Id" class="btn btn-danger btn-sm">Sil</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<style>
+    .card-img {
+        height: 200px;
+        /* Sabit resim yüksekliği */
+        width: 100%;
+        /* Resmin genişliği */
+        object-fit: cover;
+        /* Resmi kırpma */
+        object-position: center;
+        /* Resmin ortalanmasını sağla */
+    }
+</style>

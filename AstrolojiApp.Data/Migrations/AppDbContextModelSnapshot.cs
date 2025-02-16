@@ -206,84 +206,84 @@ namespace AstrolojiApp.Data.Migrations
                         {
                             Id = 1,
                             DateRange = "21 Mart - 20 Nisan",
-                            Image = "/images/horoscopes/aries.png",
+                            Image = "/Ui/assets/img//Koc.jpg",
                             Name = "Koç"
                         },
                         new
                         {
                             Id = 2,
                             DateRange = "21 Nisan - 20 Mayıs",
-                            Image = "/images/horoscopes/taurus.png",
+                            Image = "/Ui/assets/img//Boga.jpg",
                             Name = "Boğa"
                         },
                         new
                         {
                             Id = 3,
                             DateRange = "21 Mayıs - 21 Haziran",
-                            Image = "/images/horoscopes/gemini.png",
+                            Image = "/Ui/assets/img/ikizler.jpg",
                             Name = "İkizler"
                         },
                         new
                         {
                             Id = 4,
                             DateRange = "22 Haziran - 22 Temmuz",
-                            Image = "/images/horoscopes/cancer.png",
+                            Image = "/Ui/assets/img/Yengec.jpg",
                             Name = "Yengeç"
                         },
                         new
                         {
                             Id = 5,
                             DateRange = "23 Temmuz - 22 Ağustos",
-                            Image = "/images/horoscopes/leo.png",
+                            Image = "/Ui/assets/img/Aslan.jpg",
                             Name = "Aslan"
                         },
                         new
                         {
                             Id = 6,
                             DateRange = "23 Ağustos - 22 Eylül",
-                            Image = "/images/horoscopes/virgo.png",
+                            Image = "/Ui/assets/img/Basak.jpg",
                             Name = "Başak"
                         },
                         new
                         {
                             Id = 7,
                             DateRange = "23 Eylül - 22 Ekim",
-                            Image = "/images/horoscopes/libra.png",
+                            Image = "/Ui/assets/img/Terazi.jpg",
                             Name = "Terazi"
                         },
                         new
                         {
                             Id = 8,
                             DateRange = "23 Ekim - 21 Kasım",
-                            Image = "/images/horoscopes/scorpio.png",
+                            Image = "/Ui/assets/img/Akrep.jpg",
                             Name = "Akrep"
                         },
                         new
                         {
                             Id = 9,
                             DateRange = "22 Kasım - 21 Aralık",
-                            Image = "/images/horoscopes/sagittarius.png",
+                            Image = "/Ui/assets/img/Yay.jpg",
                             Name = "Yay"
                         },
                         new
                         {
                             Id = 10,
                             DateRange = "22 Aralık - 19 Ocak",
-                            Image = "/images/horoscopes/capricorn.png",
+                            Image = "/Ui/assets/img/Oglak.jpg",
                             Name = "Oğlak"
                         },
                         new
                         {
                             Id = 11,
                             DateRange = "20 Ocak - 18 Şubat",
-                            Image = "/images/horoscopes/aquarius.png",
+                            Image = "/Ui/assets/img/Kova.jpg",
                             Name = "Kova"
                         },
                         new
                         {
                             Id = 12,
                             DateRange = "19 Şubat - 20 Mart",
-                            Image = "/images/horoscopes/pisces.png",
+                            Image = "/Ui/assets/img/balik.jpg",
                             Name = "Balık"
                         });
                 });

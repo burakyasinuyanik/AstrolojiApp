@@ -1,0 +1,26 @@
+﻿@model IEnumerable<Horoscope>
+
+
+@foreach (var item in Model)
+{
+    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+        <div class="portfolio-content h-100">
+            <img src="@item.Image" class="img-fluid" alt="">
+            <div class="portfolio-info">
+                <h4>@item.Name</h4>
+                <p>@item.DateRange</p>
+                <!-- Görüntüleme bağlantısı -->
+                <a href="@item.Image" title="@item.Name Burcu" data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                </a>
+                <!-- Horoskop Yorumu bağlantısı -->
+                <a asp-controller="HoroscopeComment" asp-action="Index" asp-route-id="@item.Id" title="Burç Yorumu"
+                    class="details-link">
+                    <i class="bi bi-link-45deg"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+}

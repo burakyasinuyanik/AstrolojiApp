@@ -61,9 +61,5 @@
                 throw new Exception($"Dosya yükleme hatası: {ex.Message}");
             }
         }
-
-        // ... rest of the code ...
-    
-
     }
 }

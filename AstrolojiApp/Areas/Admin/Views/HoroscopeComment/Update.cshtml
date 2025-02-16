@@ -1,0 +1,60 @@
+@model HoroscopeComment
+@{
+    ViewData["Title"] = "Update";
+}
+
+
+
+<form asp-area="Admin" asp-controller="HoroscopeComment" asp-action="Update" method="post" enctype="multipart/form-data">
+    <h6 class="display-6 fs-3 text-primary mb-4">Horoscope Comment Düzenleme</h6>
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label"></label>
+        <input asp-for="Name" class="form-control" placeholder="İsminizi giriniz" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+        <input type="hidden" asp-for="HoroscopeId"/>
+    </div>
+
+    
+    <div class="mb-3">
+        <label asp-for="Daily" class="form-label"></label>
+        <textarea asp-for="Daily" class="form-control" placeholder="Açıklama giriniz"></textarea>
+        <span asp-validation-for="Daily" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Monthly" class="form-label"></label>
+        <textarea asp-for="Monthly" class="form-control" placeholder="Açıklama giriniz"></textarea>
+        <span asp-validation-for="Monthly" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Annual" class="form-label"></label>
+        <textarea asp-for="Annual" class="form-control" placeholder="Açıklama giriniz"></textarea>
+        <span asp-validation-for="Annual" class="text-danger"></span>
+    </div>
+
+    <div class="d-flex justify-content-end">
+        <button type="submit" class="btn btn-primary">Değişikleri Kaydet</button>
+        <a asp-action="Index" asp-area="Admin" asp-controller="HoroscopeComment" class="btn btn-danger btn-sm">İptal</a>
+    </div>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

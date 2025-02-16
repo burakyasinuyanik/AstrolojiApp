@@ -1,0 +1,95 @@
+﻿@model HomePageModel
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - Valera Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  @await Html.PartialAsync("_StylePartial")
+
+  <!-- =======================================================
+  * Template Name: Valera
+  * Template URL: https://bootstrapmade.com/valera-free-bootstrap-theme/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  @await Html.PartialAsync("_HeaderPartial")
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    @await Html.PartialAsync("_HeroSectionPartial")
+    <!-- /Hero Section -->
+
+    <!-- About Section -->
+    @await Html.PartialAsync("_AboutSectionPartial")
+    <!-- /About Section -->
+
+    <!-- Stats Section -->
+
+    <!-- /Stats Section -->
+    @RenderBody()
+    <!-- Featured Services Section -->
+    @await Html.PartialAsync("_FeaturedServicesSectionPartial")
+    <!-- /Featured Services Section -->
+
+    <!-- Services Section -->
+    @await Html.PartialAsync("_ServicesSectionPartial")
+    <!-- /Services Section -->
+
+    <!-- Testimonials Section -->
+    @await Html.PartialAsync("_TestimonialsSectionPartial")
+    <!-- /Testimonials Section -->
+
+    <!-- Call To Action Section -->
+  
+  
+    <!-- /Call To Action Section -->
+
+    <!-- Portfolio Section -->
+    @await Html.PartialAsync("_PortfolioSectionPartial")
+    <!-- /Portfolio Section -->
+
+    <!-- Team Section -->
+   
+    <!-- /Team Section -->
+
+    <!-- Pricing Section -->
+ 
+    <!-- /Pricing Section -->
+
+    <!-- Faq Section -->
+  
+    <!-- /Faq Section -->
+
+    <!-- Contact Section -->
+    @await Html.PartialAsync("_ContactSectionPartial")
+    <!-- /Contact Section -->
+
+  </main>
+
+  @await Html.PartialAsync("_FooterPartial")
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  @await Html.PartialAsync("_ScriptPartial")
+
+</body>
+
+
+</html>

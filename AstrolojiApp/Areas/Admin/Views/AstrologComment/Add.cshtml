@@ -1,0 +1,26 @@
+@model AstrologComment
+
+<form asp-area="Admin" asp-controller="AstrologComment" asp-action="Add" method="post" enctype="multipart/form-data">
+    <h6 class="display-6 fs-3 text-primary mb-4">Astrolog Comment Ekleme</h6>
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label"></label>
+        <input asp-for="Name" class="form-control" placeholder="İsminizi giriniz" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Image" class="form-label"></label>
+        <input asp-for="Image" class="form-control" type="file" />
+        <span asp-validation-for="Image" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Text" class="form-label"></label>
+        <textarea asp-for="Text" class="form-control" placeholder="Açıklama giriniz"></textarea>
+        <span asp-validation-for="Text" class="text-danger"></span>
+    </div>
+
+    <div class="text-center">
+        <button class="btn btn-primary" type="submit">EKLE</button>
+    </div>
+</form>

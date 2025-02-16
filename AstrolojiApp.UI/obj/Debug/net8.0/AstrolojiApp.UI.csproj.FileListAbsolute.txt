@@ -152,7 +152,6 @@ C:\Users\brk_y\source\repos\burakyasinuyanik\AstrolojiApp\AstrolojiApp.UI\obj\De
 C:\Users\brk_y\source\repos\burakyasinuyanik\AstrolojiApp\AstrolojiApp.UI\obj\Debug\net8.0\AstrolojiApp.UI.pdb
 C:\Users\brk_y\source\repos\burakyasinuyanik\AstrolojiApp\AstrolojiApp.UI\obj\Debug\net8.0\AstrolojiApp.UI.genruntimeconfig.cache
 C:\Users\brk_y\source\repos\burakyasinuyanik\AstrolojiApp\AstrolojiApp.UI\obj\Debug\net8.0\ref\AstrolojiApp.UI.dll
-D:\GitHubb\AstrolojiApp\AstrolojiApp.UI\bin\Debug\net8.0\appsettings.json
 D:\GitHubb\AstrolojiApp\AstrolojiApp.UI\bin\Debug\net8.0\AstrolojiApp.UI.staticwebassets.runtime.json
 D:\GitHubb\AstrolojiApp\AstrolojiApp.UI\bin\Debug\net8.0\AstrolojiApp.UI.exe
 D:\GitHubb\AstrolojiApp\AstrolojiApp.UI\bin\Debug\net8.0\AstrolojiApp.UI.deps.json
@@ -303,3 +302,4 @@ D:\GitHubb\AstrolojiApp\AstrolojiApp.UI\obj\Debug\net8.0\refint\AstrolojiApp.UI.
 D:\GitHubb\AstrolojiApp\AstrolojiApp.UI\obj\Debug\net8.0\AstrolojiApp.UI.pdb
 D:\GitHubb\AstrolojiApp\AstrolojiApp.UI\obj\Debug\net8.0\AstrolojiApp.UI.genruntimeconfig.cache
 D:\GitHubb\AstrolojiApp\AstrolojiApp.UI\obj\Debug\net8.0\ref\AstrolojiApp.UI.dll
+D:\GitHubb\AstrolojiApp\AstrolojiApp.UI\bin\Debug\net8.0\appsettings.json
