@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Abstract\**" />
+    <EmbeddedResource Remove="Abstract\**" />
+    <None Remove="Abstract\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AstrolojiApp.Shared\AstrolojiApp.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

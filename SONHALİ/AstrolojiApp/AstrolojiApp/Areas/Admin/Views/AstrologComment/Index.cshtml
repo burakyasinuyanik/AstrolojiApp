@@ -1,0 +1,27 @@
+@model IEnumerable<AstrologComment>
+@{
+    ViewData["Title"] = "Index";
+}
+<h1>Astrology Comment</h1>
+<a href="/Admin/AstrologComment/Add"> yeni ekle</a>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    @foreach (var astrgcmmt in Model)
+    {
+        <div class="col">
+            <div class="card h-100" style="display: inline-block; width: auto; height: auto;">
+                <img src="@astrgcmmt.Image" class="card-img-top" alt="..."
+                    style="max-width: 100%; max-height: 100%; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">@astrgcmmt.Name</h5>
+                    <p class="card-text">@astrgcmmt.Text</p>
+                    <div class="d-flex justify-content-between mt-3">
+
+                        <a asp-action="Update" asp-route-id="@astrgcmmt.Id" class="btn btn-primary btn-sm">Düzenle</a>
+
+                        <a asp-action="Delete" asp-route-id="@astrgcmmt.Id" class="btn btn-danger btn-sm">Sil</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

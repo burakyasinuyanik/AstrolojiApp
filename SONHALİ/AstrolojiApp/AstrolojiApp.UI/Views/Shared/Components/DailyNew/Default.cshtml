@@ -1,0 +1,9 @@
+﻿@model IEnumerable<DailyNew>
+
+@foreach (var item in Model)
+{
+    <div class="col-md-6 icon-box position-relative">
+        <h2 style="color: black"> @item.Title </h2>
+        <p>@item.Text</p>
+    </div>
+}

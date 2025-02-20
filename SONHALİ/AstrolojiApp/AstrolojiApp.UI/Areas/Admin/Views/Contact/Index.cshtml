@@ -1,0 +1,159 @@
+@model IEnumerable<ContactDto>
+
+<div class="container-fluid pt-4 px-4">
+    <div class="bg-light rounded p-4">
+        <div class="d-flex align-items-center justify-content-between mb-4">
+            <h6 class="mb-0">İletişim Bilgileri</h6>
+            <a asp-area="Admin" asp-controller="Contact" asp-action="Add" class="btn btn-primary">Yeni Ekle</a>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            @foreach (var item in Model)
+            {
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="@item.Icon"></i></h5>
+                            <p class="card-text">@item.Address</p>
+                            <p class="card-text">@item.PhoneNumber</p>
+                            <div class="d-flex justify-content-between mt-3">
+                                <a asp-action="Update" asp-route-id="@item.Id" class="btn btn-primary btn-sm">Düzenle</a>
+                                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm">Sil</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<style>
+    .card {
+        box-shadow: 0 0.15rem 1.75rem 0 rgb(34 39 46 / 15%);
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@* <div class="card">
+    <div class="card-body text-center">
+        <h5 class="card-title">Contact Form</h5>
+
+
+        <form class="row g-3 justify-content-center">
+            <div class="col-md-6">
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingEmail" placeholder="Your Email">
+                    <label for="floatingEmail">Email</label>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-floating mb-3">
+                    <input class="form-control" id="floatingPassword" placeholder="Phone">
+                    <label for="floatingPassword">Phone</label>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" placeholder="Address" id="floatingTextarea"
+                        style="height: 100px;"></textarea>
+                    <label for="floatingTextarea">Address</label>
+                </div>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Gönder</button>
+                <button type="reset" class="btn btn-secondary">Düzenle</button>
+            </div>
+        </form>
+
+    </div>
+</div> *@

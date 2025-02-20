@@ -1,0 +1,28 @@
+@model DailyNew
+
+<div class="container-fluid pt-4 px-4">
+    <div class="bg-light rounded p-4">
+        <h6 class="display-6 fs-3 text-primary mb-4">Hizmet Güncelleme</h6>
+        <form asp-area="Admin" asp-controller="DailyNew" asp-action="Update" method="post">
+            <div class="row">
+                <div class="col-12">
+                    <div class="mb-3">
+                        <label asp-for="Title" class="form-label"></label>
+                        <input asp-for="Title" class="form-control">
+                        <span class="text-danger" asp-validation-for="Title"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="Text" class="form-label"></label>
+                        <input asp-for="Text" class="form-control">
+                        <span class="text-danger" asp-validation-for="Text"></span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="d-flex justify-content-end">
+                <button type="submit" class="btn btn-primary">Değişikleri Kaydet</button>
+                <a asp-action="Index" asp-area="Admin" asp-controller="DailyNew" class="btn btn-danger btn-sm">İptal</a>
+            </div>
+        </form>
+    </div>
+</div>
