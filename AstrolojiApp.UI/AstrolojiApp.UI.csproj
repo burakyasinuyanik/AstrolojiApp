@@ -18,10 +18,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AstrolojiApp.Business\AstrolojiApp.Business.csproj" />
-    <ProjectReference Include="..\AstrolojiApp.Data\AstrolojiApp.Data.csproj" />
-    <ProjectReference Include="..\AstrolojiApp.Entity\AstrolojiApp.Entity.csproj" />
-    <ProjectReference Include="..\AstrolojiApp.Shared\AstrolojiApp.Shared.csproj" />
+    <ProjectReference Include="..\SONHALİ\AstrolojiApp.Business\AstrolojiApp.Business.csproj" />
+    <ProjectReference Include="..\SONHALİ\AstrolojiApp.Data\AstrolojiApp.Data.csproj" />
+    <ProjectReference Include="..\SONHALİ\AstrolojiApp.Entity\AstrolojiApp.Entity.csproj" />
+    <ProjectReference Include="..\SONHALİ\AstrolojiApp.Shared\AstrolojiApp.Shared.csproj" />
+    <ProjectReference Include="..\SONHALİ\AstrolojiApp\AstrolojiApp.Business\AstrolojiApp.Business.csproj" />
+    <ProjectReference Include="..\SONHALİ\AstrolojiApp\AstrolojiApp.Data\AstrolojiApp.Data.csproj" />
+    <ProjectReference Include="..\SONHALİ\AstrolojiApp\AstrolojiApp.Entity\AstrolojiApp.Entity.csproj" />
+    <ProjectReference Include="..\SONHALİ\AstrolojiApp\AstrolojiApp.Shared\AstrolojiApp.Shared.csproj" />
   </ItemGroup>
 
   <ItemGroup>

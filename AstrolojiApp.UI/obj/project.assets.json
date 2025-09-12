@@ -4013,23 +4013,23 @@
     },
     "AstrolojiApp.Business/1.0.0": {
       "type": "project",
-      "path": "../AstrolojiApp.Business/AstrolojiApp.Business.csproj",
-      "msbuildProject": "../AstrolojiApp.Business/AstrolojiApp.Business.csproj"
+      "path": "../SONHALİ/AstrolojiApp/AstrolojiApp.Business/AstrolojiApp.Business.csproj",
+      "msbuildProject": "../SONHALİ/AstrolojiApp/AstrolojiApp.Business/AstrolojiApp.Business.csproj"
     },
     "AstrolojiApp.Data/1.0.0": {
       "type": "project",
-      "path": "../AstrolojiApp.Data/AstrolojiApp.Data.csproj",
-      "msbuildProject": "../AstrolojiApp.Data/AstrolojiApp.Data.csproj"
+      "path": "../SONHALİ/AstrolojiApp/AstrolojiApp.Data/AstrolojiApp.Data.csproj",
+      "msbuildProject": "../SONHALİ/AstrolojiApp/AstrolojiApp.Data/AstrolojiApp.Data.csproj"
     },
     "AstrolojiApp.Entity/1.0.0": {
       "type": "project",
-      "path": "../AstrolojiApp.Entity/AstrolojiApp.Entity.csproj",
-      "msbuildProject": "../AstrolojiApp.Entity/AstrolojiApp.Entity.csproj"
+      "path": "../SONHALİ/AstrolojiApp/AstrolojiApp.Entity/AstrolojiApp.Entity.csproj",
+      "msbuildProject": "../SONHALİ/AstrolojiApp/AstrolojiApp.Entity/AstrolojiApp.Entity.csproj"
     },
     "AstrolojiApp.Shared/1.0.0": {
       "type": "project",
-      "path": "../AstrolojiApp.Shared/AstrolojiApp.Shared.csproj",
-      "msbuildProject": "../AstrolojiApp.Shared/AstrolojiApp.Shared.csproj"
+      "path": "../SONHALİ/AstrolojiApp/AstrolojiApp.Shared/AstrolojiApp.Shared.csproj",
+      "msbuildProject": "../SONHALİ/AstrolojiApp/AstrolojiApp.Shared/AstrolojiApp.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4038,27 +4038,31 @@
       "AstrolojiApp.Data >= 1.0.0",
       "AstrolojiApp.Entity >= 1.0.0",
       "AstrolojiApp.Shared >= 1.0.0",
+      "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\SONHALİ\\AstrolojiApp.Business\\AstrolojiApp.Business.csproj",
+      "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\SONHALİ\\AstrolojiApp.Data\\AstrolojiApp.Data.csproj",
+      "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\SONHALİ\\AstrolojiApp.Entity\\AstrolojiApp.Entity.csproj",
+      "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\SONHALİ\\AstrolojiApp.Shared\\AstrolojiApp.Shared.csproj",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.11"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\samet\\.nuget\\packages\\": {},
+    "C:\\Users\\brk_y\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHubb\\AstrolojiApp\\AstrolojiApp.UI\\AstrolojiApp.UI.csproj",
+      "projectUniqueName": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.UI\\AstrolojiApp.UI.csproj",
       "projectName": "AstrolojiApp.UI",
-      "projectPath": "D:\\GitHubb\\AstrolojiApp\\AstrolojiApp.UI\\AstrolojiApp.UI.csproj",
-      "packagesPath": "C:\\Users\\samet\\.nuget\\packages\\",
-      "outputPath": "D:\\GitHubb\\AstrolojiApp\\AstrolojiApp.UI\\obj\\",
+      "projectPath": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.UI\\AstrolojiApp.UI.csproj",
+      "packagesPath": "C:\\Users\\brk_y\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\AstrolojiApp.UI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\samet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\brk_y\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4067,24 +4071,35 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\GitHubb\\AstrolojiApp\\AstrolojiApp.Business\\AstrolojiApp.Business.csproj": {
-              "projectPath": "D:\\GitHubb\\AstrolojiApp\\AstrolojiApp.Business\\AstrolojiApp.Business.csproj"
+            "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\SONHALİ\\AstrolojiApp.Business\\AstrolojiApp.Business.csproj": {
+              "projectPath": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\SONHALİ\\AstrolojiApp.Business\\AstrolojiApp.Business.csproj"
             },
-            "D:\\GitHubb\\AstrolojiApp\\AstrolojiApp.Data\\AstrolojiApp.Data.csproj": {
-              "projectPath": "D:\\GitHubb\\AstrolojiApp\\AstrolojiApp.Data\\AstrolojiApp.Data.csproj"
+            "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\SONHALİ\\AstrolojiApp.Data\\AstrolojiApp.Data.csproj": {
+              "projectPath": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\SONHALİ\\AstrolojiApp.Data\\AstrolojiApp.Data.csproj"
             },
-            "D:\\GitHubb\\AstrolojiApp\\AstrolojiApp.Entity\\AstrolojiApp.Entity.csproj": {
-              "projectPath": "D:\\GitHubb\\AstrolojiApp\\AstrolojiApp.Entity\\AstrolojiApp.Entity.csproj"
+            "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\SONHALİ\\AstrolojiApp.Entity\\AstrolojiApp.Entity.csproj": {
+              "projectPath": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\SONHALİ\\AstrolojiApp.Entity\\AstrolojiApp.Entity.csproj"
             },
-            "D:\\GitHubb\\AstrolojiApp\\AstrolojiApp.Shared\\AstrolojiApp.Shared.csproj": {
-              "projectPath": "D:\\GitHubb\\AstrolojiApp\\AstrolojiApp.Shared\\AstrolojiApp.Shared.csproj"
+            "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\SONHALİ\\AstrolojiApp.Shared\\AstrolojiApp.Shared.csproj": {
+              "projectPath": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\SONHALİ\\AstrolojiApp.Shared\\AstrolojiApp.Shared.csproj"
+            },
+            "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\SONHALİ\\AstrolojiApp\\AstrolojiApp.Business\\AstrolojiApp.Business.csproj": {
+              "projectPath": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\SONHALİ\\AstrolojiApp\\AstrolojiApp.Business\\AstrolojiApp.Business.csproj"
+            },
+            "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\SONHALİ\\AstrolojiApp\\AstrolojiApp.Data\\AstrolojiApp.Data.csproj": {
+              "projectPath": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\SONHALİ\\AstrolojiApp\\AstrolojiApp.Data\\AstrolojiApp.Data.csproj"
+            },
+            "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\SONHALİ\\AstrolojiApp\\AstrolojiApp.Entity\\AstrolojiApp.Entity.csproj": {
+              "projectPath": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\SONHALİ\\AstrolojiApp\\AstrolojiApp.Entity\\AstrolojiApp.Entity.csproj"
+            },
+            "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\SONHALİ\\AstrolojiApp\\AstrolojiApp.Shared\\AstrolojiApp.Shared.csproj": {
+              "projectPath": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\SONHALİ\\AstrolojiApp\\AstrolojiApp.Shared\\AstrolojiApp.Shared.csproj"
             }
           }
         }
@@ -4098,7 +4113,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -4130,8 +4146,46 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\SONHALİ\\AstrolojiApp.Data\\AstrolojiApp.Data.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\SONHALİ\\AstrolojiApp.Data\\AstrolojiApp.Data.csproj",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\SONHALİ\\AstrolojiApp.Shared\\AstrolojiApp.Shared.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\SONHALİ\\AstrolojiApp.Shared\\AstrolojiApp.Shared.csproj",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\SONHALİ\\AstrolojiApp.Business\\AstrolojiApp.Business.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\SONHALİ\\AstrolojiApp.Business\\AstrolojiApp.Business.csproj",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\SONHALİ\\AstrolojiApp.Entity\\AstrolojiApp.Entity.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\Users\\brk_y\\source\\repos\\burakyasinuyanik\\AstrolojiApp\\SONHALİ\\AstrolojiApp.Entity\\AstrolojiApp.Entity.csproj",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }

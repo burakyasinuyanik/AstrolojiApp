@@ -7,6 +7,7 @@ using AstrolojiApp.Data.Concrete.Context;
 using AstrolojiApp.Data.Concrete.Repositories;
 using Microsoft.EntityFrameworkCore;
 
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
